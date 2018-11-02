@@ -86,13 +86,13 @@ body{overflow:hidden;background-color:#FBF8F2}
 .button_rest{background-image:url(../img/sp_common.svg);background-size:437px 354px;background-position:-365px -243px;width:53px;height:53px;bottom:22px}
 .button_rest.is_active{background-image:url(../img/sp_common.svg);background-size:437px 354px;background-position:-135px -266px;width:53px;height:53px}
 .icon_triumph{background-image:url(../img/sp_common.svg);background-size:437px 354px;background-position:-365px 0px;width:72px;height:64px;position:absolute;top:171px;left:201px}
-.icon_map_indi{background-image:url(../img/sp_common.svg);background-size:437px 354px;background-position:-188px -266px;width:40px;height:51px;position:absolute;z-index:100;bottom:140px;left:181px}
+.icon_map_indi{background-image:url(../img/sp_common.svg);background-size:437px 354px;background-position:-188px -266px;width:40px;height:51px;position:absolute;z-index:100;bottom:100px;left:181px}
 .group_marker .icon_marker{position:absolute;width:26px;height:26px;background-color:#FFFFFF;border:1px solid #3D4367;box-shadow:0 1px 4px 0 rgba(0, 0, 0, 0.5);font-family:AppleSDGothicNeo-Bold;font-size:14px;color:#3D4367;line-height:26px;border-radius:50%;letter-spacing:0;text-align:center}
 .group_marker .icon_marker.is_active{background-color:#032A50;border-color:#3D4367;color:#fff}
 .group_marker .icon_marker_1{bottom:100px;left:200px}
-#path_1{position:absolute;bottom:69px;left:90px}
+#path_1{position:absolute;bottom:29px;left:90px}
 #path_1 #path_case_1.is_animate{stroke-dasharray:670;stroke-dashoffset:660;animation:path_case_1 3s ease-in forwards;animation-delay:1s}
-#path_2{position:absolute;bottom:252px;left:127px}
+#path_2{position:absolute;bottom:212px;left:127px}
 #path_2 #path_case_2.is_animate{stroke-dasharray:480;stroke-dashoffset:650;animation:path_case_2 3s ease-in forwards;animation-delay:2.8s}
 #path_3{position:absolute;top:335px;left:123px}
 #path_3 #path_case_3.is_animate{stroke-dasharray:185;stroke-dashoffset:320;animation:path_case_3 1s 1.8s ease-in forwards}
