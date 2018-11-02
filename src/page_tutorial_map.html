@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>[페이지] 코스 설정</title>
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/components.css">
+</head>
+
+<body>
+    <div id="wrap" class="wrap">
+        <div class="container">
+            <div class="content">
+                <div id="mapTutoFlick" class="list_tuto_map">
+                    <!-- scene_1 -->
+                    <div class="item" style="background-image:url(./img/tuto/map/bg_tuto_map_1.png)" style="display:block;"></div>
+                    <!-- scene_2 -->
+                    <div class="item" style="background-image:url(./img/tuto/map/bg_tuto_map_2.png)" style="display:none;"></div>
+                    <!-- scene_3 -->
+                    <div class="item" style="background-image:url(./img/tuto/map/bg_tuto_map_3.png)" style="display:none;"></div>
+                    <!-- scene_4 -->
+                    <div class="item" style="background-image:url(./img/tuto/map/bg_tuto_map_4.png)" style="display:none;"></div>
+                </div>
+                <div id="naviButtons" class="navi_buttons">
+                    <a href="#" id="buttonPrev" class="button_prev"><span class="blind">이전 튜토리얼으로</span></a>
+                    <a href="#" id="buttonNext" class="button_next"><span class="blind">이전 튜토리얼으로</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var naviButtons = document.getElementById('naviButtons');
+        var curTutoIndex = 0;
+
+        function handelTutoPages(e){
+            e.preventDefault();
+            var _target = e.target;
+
+            setScene(_target.id);
+        } 
+
+        function setScene(targetId){
+            var lists = document.getElementById('mapTutoFlick').children;
+            var listLength = lists.length;
+
+            if(targetId === "buttonPrev"){
+                if(curTutoIndex !== 0){
+                    lists[curTutoIndex].style.display = 'none';
+                    lists[--curTutoIndex].style.display = 'block';
+                }
+            } else if(targetId === "buttonNext") {
+                if(curTutoIndex === listLength-1){
+                    window.location.href = './page_set_distance.html';
+                }
+
+                if(curTutoIndex !== listLength-1){
+                    lists[curTutoIndex].style.display = 'none';
+                    lists[++curTutoIndex].style.display = 'block';
+                }
+            }
+        }
+
+        naviButtons.addEventListener('click', handelTutoPages);
+
+    </script>
+</body>
+
+</html>

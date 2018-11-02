@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="53" height="53" viewBox="0 0 53 53">
+  <defs>
+    <rect id="icon_rest_active-b" width="43.203" height="43.203" x=".676" y=".561" rx="21.602"/>
+    <filter id="icon_rest_active-a" width="139.3%" height="139.3%" x="-19.7%" y="-15%" filterUnits="objectBoundingBox">
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2.5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.252915534 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(4.092 1.7)">
+    <g fill-rule="nonzero" transform="translate(.138 .331)">
+      <use fill="#000" filter="url(#icon_rest_active-a)" xlink:href="#icon_rest_active-b"/>
+      <use fill="#ED744A" xlink:href="#icon_rest_active-b"/>
+    </g>
+    <rect width="18.898" height="9.406" x="13.351" y="12.676" stroke="#FFF" stroke-width="1.08"/>
+    <path stroke="#FFF" stroke-width="1.08" d="M13.3097611,22.2573341 C12.1795381,23.5051085 11.5665807,25.0975386 11.4727256,27.0558482 L34.1277454,27.0558482 C34.0372897,25.0957949 33.4461635,23.5016655 32.3574788,22.2538174 C32.3336375,22.2539173 32.3068265,22.2540296 32.2765696,22.2541563 C31.9148173,22.2556397 31.9148173,22.2556397 31.377885,22.2577412 C30.4170834,22.2614495 29.3659233,22.2651579 28.2583281,22.268619 C26.2921721,22.2747631 24.3662144,22.2794467 22.5605345,22.2820862 C18.0073615,22.2887418 14.7465977,22.2818373 13.3097611,22.2573341 Z"/>
+    <rect width="19.44" height="1.08" x="13.08" y="15.304" fill="#FFF" fill-rule="nonzero"/>
+    <rect width="19.44" height="1.08" x="13.08" y="18.571" fill="#FFF" fill-rule="nonzero"/>
+    <rect width="1.08" height="7.56" x="10.92" y="27.184" fill="#FFF" fill-rule="nonzero"/>
+    <rect width="1.08" height="7.56" x="33.6" y="27.184" fill="#FFF" fill-rule="nonzero"/>
+    <rect width="1.08" height="5.499" x="15.837" y="27.184" fill="#FFF" fill-rule="nonzero"/>
+    <rect width="1.08" height="5.499" x="28.975" y="27.184" fill="#FFF" fill-rule="nonzero"/>
+  </g>
+</svg>

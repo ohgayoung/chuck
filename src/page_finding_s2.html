@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>[페이지] 지도 경로 설정</title>
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/components.css">
+    <script src="./js/jquery-1.11.2.min.js"></script>
+</head>
+
+<body>
+    <div id="wrap" class="wrap">
+        <div class="container">
+            <div class="content">
+                <div class="header_s2"></div>
+                <div class="map_resize" style="height:100vh;background-image:url(./img/navi_finding_s2_bg.png);">
+                    <div class="group_button">
+                        <a href="#" role="button" class="button_now"></a>
+                        <a href="#" role="button" class="button_view"></a>
+                        <a href="#" role="button" class="button_rest"></a>
+                    </div>
+                </div>
+                <i class="icon_map_indi"></i>
+                <i class="icon_map_indi_now"></i>
+            </div>
+            <div id="naviButtons" class="navi_buttons type_right_bottom">
+                <a href="#" id="buttonPrev" class="button_prev" style=""><span class="blind">이전 튜토리얼으로</span></a>
+                <a href="#" id="buttonNext" class="button_next" style=""><span class="blind">다음 튜토리얼으로</span></a>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.button_now').click(function(e){
+            e.preventDefault();
+            var buttonNow = $('.icon_map_indi_now');
+            $(this).toggleClass('is_active');
+            $('.map_resize').toggleClass('is_animate');
+            $('.icon_map_indi').toggle();
+
+            if(buttonNow.hasClass('is_active')){
+                $('.icon_map_indi_now').toggleClass('is_active is_animate')
+            } else {
+                setTimeout(function () {
+                    $('.icon_map_indi_now').toggleClass('is_active is_animate');
+                }, 900);
+            }
+        });
+        var naviButtons = document.getElementById('naviButtons');
+
+        function handelTutoPages(e) {
+            e.preventDefault();
+            console.log(e.target);
+            if (e.target.id === "buttonPrev") {
+                window.location.href = './page_finding_s1.html';
+            } else if (e.target.id === "buttonNext") {
+                window.location.href = './page_set_way.html';
+            }
+        }
+
+        naviButtons.addEventListener('click', handelTutoPages);
+    </script>
+</body>
+
+</html>

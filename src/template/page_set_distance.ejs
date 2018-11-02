@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>[페이지] 지도 설정</title>
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/components.css">    
+</head>
+<body>
+    <div id="wrap" class="wrap">
+        <!-- header -->
+        <%- component('.header_map[data-select="type_map"]', include('/components/header')) %>
+        <!-- //header -->
+        <div class="container">
+            <!-- 거리 설정 슬라이더 -->
+            <%- component('.aricle_slider[data-select="type_default"]', include('/components/slider')) %>
+            <!-- //거리 설정 슬라이더 -->
+            
+            <!-- 여행 코스 -->
+            <%- component('.article_course[data-select="type_default"]', include('/components/section_course')) %>
+            <!-- //여행 코스 -->
+            <!-- 지도 -->
+            <%- component('.article_map[data-select="type_default"]', include('/components/section_map')) %>
+            <!-- //지도 -->
+            <!-- 카드 리스트 -->
+            <%- component('.article_card_spot[data-select="type_default"]', include('/components/card_spot')) %>
+            <!-- //카드 리스트 -->
+        </div>
+    </div>
+    <script src="./js/loadModel.js"></script>
+    <script>
+            var buttonNavi = document.getElementsByClassName('button_navigate')[0];
+            buttonNavi.addEventListener('click', function(e){
+                window.location.href = './page_finding_s1.html';
+            });
+
+            // 범위 : 0 ~ 10000
+            const defaultVal = 1200;
+            const limitVal = 8000;
+            const maxVal = 10000;
+            const mapMaxValue = 350;
+            var nowVal = defaultVal;
+
+            const maxMapValue = 350;
+            const defaultMapVal = 100;
+            var nowMapVal = defaultMapVal;
+            
+            var iscardListActive = false;
+
+            var courseCount = 1;
+    
+            var bodyEl = document.body;
+                iconTired = document.getElementById('icon_person_tired'),
+                tooltipLimit = document.getElementById('tooltip_limit'),
+                tooltipCursor = document.getElementById('tooltip_cursor'),
+                inputRange = document.getElementById('input_range'),
+                rangeBar = document.getElementById('rangeBar'),
+                range = document.getElementById('range'),
+                tooltipLimit = document.getElementById('tooltip_limit'),
+                iconTired = document.getElementById('iconTired'),
+                mapRoundRange = document.getElementById('mapIndicator'),
+                articleCardSpot = document.getElementById('articleCardSpot'),
+                warnBar = document.getElementById('warnBar'),
+                groupSlider = document.getElementById('groupSlider');
+            
+            function setRangeInput(_targetValue){
+                _targetValue = _targetValue || defaultVal;
+    
+                valPercent = Math.ceil(_targetValue / maxVal * 100);
+                nowMapVal = Math.ceil(valPercent / 100 * mapMaxValue);
+
+                console.log("valPercent : ", valPercent);
+
+                range.dataset.value = valPercent;
+                tooltipCursor.innerText = _targetValue;
+                tooltipCursor.style.left = valPercent+ '%';
+                rangeBar.style.width = valPercent + '%';
+                mapRoundRange.style.width = nowMapVal + 'px';
+                mapRoundRange.style.height = nowMapVal + 'px';
+
+                if(valPercent > 80){
+                    warnBar.style.width = valPercent - 80 + '%';;
+                    groupSlider.classList.add('is_active');
+                }
+                
+                if (valPercent <= 80) {
+                    warnBar.removeAttribute('style');
+                    groupSlider.classList.remove('is_active');
+                }
+
+                function mapSpotToggle(rangeVal){
+                    var spots = document.querySelectorAll('[data-value="' + rangeVal +'"]');
+                    if(_targetValue >= rangeVal){
+                        spots.forEach(function(spot){
+                            spot.classList.add('is_visible');
+                        });
+                    } else {
+                        spots.forEach(function(spot){
+                            spot.classList.remove('is_visible');
+                        });
+                    }
+                }
+                mapSpotToggle(2300);
+                mapSpotToggle(4600);
+                mapSpotToggle(5100);
+                mapSpotToggle(5800);
+                mapSpotToggle(6700);
+                mapSpotToggle(10000);
+            }
+    
+            function setLimitValue(_limitVal){
+                valPercent =  Math.floor(_limitVal / maxVal * 100) + "%";
+                tooltipLimit.style.left = valPercent;
+                iconTired.style.left = valPercent; 
+            }
+            
+            function handleRangeInput(e){
+                var _targetValue = e.target.value;
+                setRangeInput(_targetValue);
+            }
+
+            function handleMapSpot(e){
+                var _target = e.target;
+
+                if(_target.classList.contains('icon_map_spot')){
+                    if(iscardListActive){
+                        articleCardSpot.classList.remove('is_active');
+                        iscardListActive = false;
+                    } else {
+                        articleCardSpot.classList.add('is_active');
+                        iscardListActive = true;
+                    }
+                } else {
+                    if(iscardListActive){
+                        articleCardSpot.classList.remove('is_active');
+                        iscardListActive = false;
+                    }
+                }
+            }
+
+            function handleCourse(e){
+                var _target = e.target;
+                console.dir(_target);
+                
+                if(_target.classList.contains('button_add_course')){
+                    var titleText, itemElement;
+                    var parentEl = _target.parentElement.parentElement;
+                    const dataVal = parentEl.dataset.value;
+                    var listCourse = document.getElementsByClassName('list_course')[0];
+                    var totalString = listCourse.innerHTML;
+
+                    if(_target.classList.contains('is_active')){
+                        _target.classList.remove('is_active');
+                        courseCount--;
+
+                        var elList = document.getElementsByClassName('list_course')[0];
+                        var elItems = document.getElementsByClassName('list_course')[0].children;
+                        var itemLen = elItems.length;
+                        var prevItemIdx;
+
+                        for(var i=0; i<itemLen; i++){
+                            if(elItems[i].dataset.value === dataVal+''){
+                                prevItemIdx = i;
+                                elList.removeChild(elItems[i]);
+                                break;
+                            }
+                        }
+                        for(var k=0; k<elItems.length; k++){
+                            elItems[k].children[0].textContent = k+1;
+                        }
+                           
+                    } else {
+                        _target.classList.add('is_active');
+                        
+                        var defaultCourse = '<a href="#" class="item" data-value="' + 2300 + '"><i class="icon_circle">' + 1 + '</i><em>' + "에펠탑" + '</em></a>'
+                        titleText = _target.previousElementSibling.children[1].innerText;
+                        itemElement = '<a href="#" class="item" data-value="' + dataVal + '"><i class="icon_circle">' + (++courseCount) + '</i><em>' + titleText + '</em></a>';
+                        totalString += itemElement;
+                        listCourse.innerHTML = totalString;
+                    }
+                }
+            }
+    
+            setRangeInput();
+            setLimitValue(limitVal);
+
+            inputRange.addEventListener('input', handleRangeInput);
+            articleMap.addEventListener('click', handleMapSpot);
+            articleCardSpot.addEventListener('click', handleCourse);
+
+        </script>
+</body>
+</html>

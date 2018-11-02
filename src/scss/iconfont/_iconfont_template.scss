@@ -1,0 +1,32 @@
+$iconfont-family: "<%= fontName %>";
+$iconfont-src: url('<%= fontPath %><%= fontName %>.woff') format('woff');
+
+@mixin <%= cssClass%>-styles {
+    font-family: "<%= fontName %>";
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    // speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+    text-decoration: none;
+    text-transform: none;
+}
+
+%<%= cssClass%> {
+    @include <%= cssClass%>-styles;
+}
+
+$<%= cssClass%>_char: (
+<% _.each(glyphs, function(glyph) { %>  "<%= glyph.fileName %>": "\<%= glyph.codePoint %>",
+<% }); %>
+);
+
+@mixin <%= cssClass%>($filename, $insert: before, $extend: false) {
+    &:#{$insert} {
+            @if $extend {
+                    @extend %<%= cssClass%>;
+            } @else {
+                    @include <%= cssClass%>-styles;
+            }
+            content: map-get($<%= cssClass%>_char,$filename);
+    }
+}

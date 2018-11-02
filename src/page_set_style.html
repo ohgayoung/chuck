@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>[페이지] 여행스타일 선택</title>
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/components.css">
+</head>
+
+<body>
+    <div id="wrap" class="wrap">
+        <!-- header -->
+        <div class="header"><a href="#" class="button_navigate" role="button">
+        </a><div class="main_header"><a href="#" class="button_navigate" role="button">
+            </a><a href="#" class="button_prev_page"><i class="icon_prev_page"></i></a>
+            <em class="title title_style"><span class="blind">여행스타일</span></em>
+        </div>
+    </div>
+        <!-- //header -->
+        <div class="container">
+            <div class="content">
+                <i class="icon_help_1"></i>
+                <div class="group_list_course_style">
+                    <ul id="listCourseStyle" class="list_course_style">
+                        <li class="item"><a href="#" class="inner" style="background-image: url(./img/course_style_1.png);"></a></li>
+                        <li class="item"><a href="#" class="inner" style="background-image: url(./img/course_style_2.png);"></a></li>
+                        <li class="item"><a href="#" class="inner" style="background-image: url(./img/course_style_3.png);"></a></li>
+                        <li class="item"><a href="#" class="inner" style="background-image: url(./img/course_style_4.png);"></a></li>
+                        <li class="item"><a href="#" class="inner" style="background-image: url(./img/course_style_5.png);"></a></li>
+                        <li class="item"><a href="#" class="inner" style="background-image: url(./img/course_style_6.png);"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var buttonPrev = document.getElementsByClassName('button_prev_page')[0];
+        buttonPrev.addEventListener('click', function(e){
+            e.preventDefault();
+            window.history.go(-1)
+        })
+
+        var listCourseStyle = document.getElementById('listCourseStyle');
+
+        listCourseStyle.addEventListener('click', function(e){
+            console.log(e.target.classList);
+            if(e.target.classList.contains('inner')){
+                window.location.href = './page_set_atrraction.html';
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>[페이지] 지도 경로 설정</title>
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/components.css">
+</head>
+
+<body>
+    <div id="wrap" class="wrap">
+        <div class="container">
+            <div class="content">
+                <div class="" style="height:100vh;background-image:url(./img/navi_finding_s1_bg.png);background-size:cover;">
+                    <div class="group_button">
+                        <a href="#" role="button" class="button_now"></a>
+                        <a href="#" role="button" class="button_view"></a>
+                        <a href="#" role="button" class="button_rest"></a>
+                    </div>
+                    <div class="group_path">
+                        <svg id="path_1" width="142px" height="391px" viewBox="0 0 142 391" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+                            <desc>Created with Sketch.</desc>
+                            <defs></defs>
+                            <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="s1" transform="translate(-90.000000, -208.000000)" fill-rule="nonzero" stroke="#3D4367" stroke-width="6">
+                                    <g transform="translate(11.665160, 159.885938)">
+                                        <path id="path_case_1" class="is_animate" d="M209.33484,50.1140625 L115.401183,255.096977 L110.601183,263.496977 L110.601183,280.296977 L81.8011826,347.496977 L137.001183,432.696977 C145.401183,419.096977 149.801183,407.096977 150.201183,396.696977 C150.201183,396.696977 150.201183,382.296977 168.201183,367.896977 C168.201183,367.896977 184.601183,349.896977 217.401183,313.896977"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        <svg id="path_2" width="125px" height="203px" viewBox="0 0 125 203" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+                            <desc>Created with Sketch.</desc>
+                            <defs></defs>
+                            <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="s1" transform="translate(-125.000000, -215.000000)" fill-rule="nonzero" stroke="#9B9B9B" stroke-width="6">
+                                    <g transform="translate(11.665160, 159.885938)">
+                                        <path id="path_case_2" class="is_animate" d="M228.546059,56.1140625 C249.031563,141.790101 215.297024,206.839744 207.03727,219.682479 C199.170836,221.822935 168.491746,233.595442 115,255"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <i class="icon_triumph"></i>
+                    <div class="group_marker">
+                        <i class="icon_marker is_active" style="top:461px;left:219px;">1</i>
+                        <i class="icon_marker" style="top:575px;left:131px;">2</i>
+                        <i class="icon_marker" style="top:396px;left:119px;">3</i>
+                        <i class="icon_marker" style="top:206px;left:222px;">4</i>
+                    </div>
+                    <i class="icon_map_indi"></i>
+                </div>
+                <div id="naviButtons" class="navi_buttons type_right_bottom">
+                    <a href="#" id="buttonPrev" class="button_prev" style=""><span class="blind">이전 튜토리얼으로</span></a>
+                    <a href="#" id="buttonNext" class="button_next" style=""><span class="blind">다음 튜토리얼으로</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var naviButtons = document.getElementById('naviButtons');
+
+        function handelTutoPages(e) {
+            e.preventDefault();
+            console.log(e.target);
+            if(e.target.id === "buttonPrev"){
+                window.location.href = './page_set_distance.html';
+            } else if(e.target.id === "buttonNext"){
+                window.location.href = './page_finding_s2.html';
+            }
+        }
+
+        naviButtons.addEventListener('click', handelTutoPages);
+    </script>
+</body>
+
+</html>

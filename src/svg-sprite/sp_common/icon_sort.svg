@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="47" height="13" viewBox="0 0 47 13">
+  <g fill="#888282" fill-rule="evenodd" transform="translate(-1 -2)">
+    <text font-family="AppleSDGothicNeo-SemiBold, Apple SD Gothic Neo" font-size="13" font-weight="500" letter-spacing=".181">
+      <tspan x=".5" y="12.594">인기순 </tspan>
+    </text>
+    <polygon fill-rule="nonzero" points="43 12 38.5 4 47.5 4"/>
+  </g>
+</svg>

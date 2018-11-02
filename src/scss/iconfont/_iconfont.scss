@@ -1,0 +1,34 @@
+$iconfont-family: "kin_iconfont";
+$iconfont-src: url('https://ssl.pstatic.net/static/kin/iconfont/kin_iconfont_d6ed01.woff') format('woff');
+
+@mixin kin_iconfont-styles {
+    font-family: "kin_iconfont";
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    // speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+    text-decoration: none;
+    text-transform: none;
+}
+
+%kin_iconfont {
+    @include kin_iconfont-styles;
+}
+
+$kin_iconfont_char: (
+  "icon_ai": "\E001",
+  "icon_alarm": "\E002",
+  "icon_art": "\E003",
+
+);
+
+@mixin kin_iconfont($filename, $insert: before, $extend: false) {
+    &:#{$insert} {
+            @if $extend {
+                    @extend %kin_iconfont;
+            } @else {
+                    @include kin_iconfont-styles;
+            }
+            content: map-get($kin_iconfont_char,$filename);
+    }
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="53px" height="53px" viewBox="0 0 53 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>현위치_활 copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0.675621694" y="0.561432131" width="43.2032373" height="43.2032373" rx="21.6016187"></rect>
+        <filter x="-19.7%" y="-15.0%" width="139.3%" height="139.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.252915534 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="s1" transform="translate(-8.000000, -159.000000)">
+            <g id="구현" transform="translate(11.665160, 159.885938)">
+                <g id="버튼" transform="translate(0.334840, 0.114062)">
+                    <g id="주변지역_비-copy" transform="translate(0.782703, 0.728516)">
+                        <g id="경사로icon-copy" transform="translate(0.137628, 0.551535)">
+                            <g id="Rectangle-Copy-12" fill-rule="nonzero">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                <use fill="#CBCBCB" xlink:href="#path-1"></use>
+                            </g>
+                            <path d="M29.2518247,15.5840123 L15.1893247,21.5078404 L21.2537778,23.3535435 L23.3455747,29.4004185 L29.2518247,15.5840123 Z M30.7108091,13.7910435 C30.8748724,13.7910435 30.9803401,13.855496 31.0272153,13.9844029 C31.0740906,14.1133098 31.0506533,14.2890893 30.9569028,14.5117467 L23.7850278,31.2812779 C23.714715,31.4453412 23.6326846,31.5654572 23.5389341,31.6416295 C23.4451836,31.7178017 23.3455752,31.7558873 23.240106,31.7558873 C23.1463555,31.7558873 23.0496768,31.723661 22.9500669,31.6592076 C22.850457,31.5947541 22.7654969,31.4980754 22.6951841,31.3691685 L20.4100278,24.267606 L13.4666685,22.1054967 C13.1854171,21.9297145 13.0535824,21.7334274 13.0711607,21.5166295 C13.0887389,21.2998315 13.2498701,21.1269817 13.5545591,20.9980748 L30.3240903,13.8789342 C30.406122,13.8437777 30.4793635,13.8203405 30.5438169,13.8086217 C30.6082703,13.7969028 30.6639339,13.7910435 30.7108091,13.7910435 Z" id="Cursor---simple-line-icons" fill="#FFFFFF"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

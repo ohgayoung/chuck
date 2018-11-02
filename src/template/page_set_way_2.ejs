@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>[페이지] 지도 경로 설정</title>
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/components.css">
+    <script src="./js/jquery-1.11.2.min.js"></script>
+</head>
+
+<body>
+    <div id="wrap" class="wrap">
+        <div class="container">
+            <div class="content">
+                <div class="" style="height:100vh;background-image:url(./img/page_set_way_2_bg.png);background-size:cover;">
+                    <div class="group_button">
+                        <a href="#" role="button" class="button_now is_active"></a>
+                        <a href="#" role="button" class="button_view"></a>
+                        <a href="#" role="button" class="button_rest is_active"></a>
+                    </div>
+                    <div class="map_streetview"></div>
+                </div>
+                <div id="naviButtons" class="navi_buttons type_right_bottom">
+                    <a href="#" id="buttonPrev" class="button_prev" style=""><span class="blind">이전 튜토리얼으로</span></a>
+                    <a href="#" id="buttonNext" class="button_next" style=""><span class="blind">다음 튜토리얼으로</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+
+            // 쉼터 찾기
+            $('.button_view').click(function (e) {
+                e.preventDefault();
+
+                $(this).toggleClass('is_active');
+                $('.map_streetview').toggleClass('is_active');
+
+            });
+
+
+
+        var naviButtons = document.getElementById('naviButtons');
+
+            function handelTutoPages(e) {
+                e.preventDefault();
+                console.log(e.target);
+                if (e.target.id === "buttonPrev") {
+                    window.location.href = './page_set_way_1.html';
+                } else if (e.target.id === "buttonNext") {
+                    window.location.href = './index.html';
+                }
+            }
+
+            naviButtons.addEventListener('click', handelTutoPages);
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="53px" height="53px" viewBox="0 0 53 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>현위치_활 copy 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0.675621694" y="0.561432131" width="43.2032373" height="43.2032373" rx="21.6016187"></rect>
+        <filter x="-19.7%" y="-15.0%" width="139.3%" height="139.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.252915534 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="S7-0" transform="translate(-8.000000, -212.000000)">
+            <g id="경사로_비-copy" transform="translate(12.782703, 213.783217)">
+                <g id="경사로icon" stroke-width="1" fill-rule="evenodd" transform="translate(0.137628, 0.331222)">
+                    <g id="Rectangle-Copy-12" fill-rule="nonzero">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#CBCBCB" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+                <path d="M14.8648546,27.9615284 C11.5187069,28.7163349 9.33215406,29.9643568 9.33215406,31.376189 C9.33215406,33.6801077 15.1549033,35.5478027 22.3376284,35.5478027 C29.5203536,35.5478027 35.3431028,33.6801077 35.3431028,31.376189 C35.3431028,29.9974546 33.2578676,28.77494 30.0438098,28.0154225" id="Oval-2" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" fill-rule="nonzero"></path>
+                <path d="M18.4664966,23.8906174 L15.9596561,31.3110849 C15.953804,31.3284078 15.950819,31.3465699 15.950819,31.3648546 C15.950819,31.4576384 16.0260352,31.5328546 16.118819,31.5328546 L28.5562286,31.5328546 C28.575512,31.5328546 28.5946516,31.5295346 28.6128085,31.5230402 C28.7001721,31.491792 28.7456625,31.3956381 28.7144143,31.3082746 L26.0612624,23.8906174 L18.4664966,23.8906174 Z" id="Rectangle-15" stroke="#FFFFFF" stroke-width="1.2" fill-rule="nonzero"></path>
+                <circle id="Oval-5-Copy" stroke="#FFFFFF" stroke-width="1.2" fill="#CBCBCB" fill-rule="nonzero" cx="22.3376284" cy="17.2367636" r="8.50717397"></circle>
+                <circle id="Oval-5-Copy" stroke="#FFFFFF" stroke-width="1.2" fill-rule="nonzero" cx="22.3376284" cy="18.3621589" r="4.3284585"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

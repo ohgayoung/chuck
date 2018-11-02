@@ -1,0 +1,66 @@
+//font color (http://gitlab2.uit.nhncorp.com/KIN/m.kin/wikis/FontColor)
+$font-black-Lv1-1: #000;
+$font-black-Lv2-1: #333;
+$font-black-Lv2-2: #4c4c4c;
+$font-black-Lv2-3: #666;
+$font-black-Lv2-4: #808080;
+$font-black-Lv2-5: #999;
+$font-black-Lv3-1: #999;
+$font-black-Lv3-2: #b2b2b2;
+$font-black-Lv3-3: #dbdbdb;
+
+$font-green1: #00c73c;
+$font-green2: #00b336;
+
+$font-blue1: #246fe0;
+$font-blue2: #005fc1;
+
+$font-red1: #d64130;
+
+// 고정 width
+$l-width_xsmall: 980px;
+$l-width_small: 1180px;
+$l-width_medium: 1280px;
+$l-width_large: 1440px;
+
+// 컨텐츠 width
+$l-grid_width_xsmall: 300px;
+$l-grid_width_small: 700px;
+$l-grid_width_medium: 900px;
+
+// snb width
+$l-grid_snb_xsmall: 140px;
+
+//media query
+// $l-mobile-small: 320px;
+// $l-mobile-medium: 375px;
+// $l-tablet-small: 768px;
+// $l-tablet-medium: 1024px;
+
+// 등급별 색상 Map
+$gradeColorMap : (
+	lv1: #fbb100,
+	lv2: #fb9300,
+	lv3: #fa7900,
+	lv4: #56bc03,
+	lv5: #2fa501,
+	lv6: #199000,
+	lv7: #00b1c5,
+	lv8: #018cb5,
+	lv9: #006da6,
+	lv10: #005cb3,
+	lv11: #014687,
+	lv12: #003363,
+	lv13: #fc6a8c,
+	lv14: #f04f75,
+	lv15: #ed4842,
+	lv16: #c9342e,
+	lv17: #8c0066,
+	lv18: #6f23b0,
+	lv19: #2a0c44,
+	normal: #959faf
+);
+
+
+
+

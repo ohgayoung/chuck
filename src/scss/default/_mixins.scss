@@ -1,0 +1,486 @@
+// sassdoc 작성법 참고 : http://sassdoc.com/annotations/
+
+/// 2의 제곱근 (sqrt(2) 적용 불가로 인해 변수로 추가)
+/// @group CSS icon
+$sqrt_2: 1.41421356237;
+
+/// 투명도가 있는 border 생성
+/// @group 기본 mixin
+/// @param {number} $opacity [0.1] - 라인의 투명도 입력
+/// @param {color} $color [#000] - 컬러값 입력
+/// @param {string} $direction [null] - border의 위치값 입력
+/// @example scss - 사용법
+/// .foo {
+///     @include opacityBorder;
+/// }
+/// @example css - 아웃풋
+/// .foo {
+///     border: 1px solid rgba(0, 0, 0, 0.1);
+/// }
+@mixin borderOpacity($opacity:0.1, $color: #000, $direction: null){
+	@if $direction == null {
+		border: 1px solid rgba($color, $opacity);
+	} @else {
+		border-#{$direction} : 1px solid rgba($color, $opacity);
+	}
+}
+
+/// 공통LNB mixin
+/// @group 기본 mixin
+
+@function is-valid-length($value) {
+	@return (type-of($value) == "number" and not unitless($value))
+		or (index(auto initial inherit 0, $value) != null);
+}
+
+/// position: absolute 및 offset: 0 선언
+/// @group 기본 mixin
+/// @param {position} $position - position 속성 입력
+/// @param {offsets} $args [null] - direction 입력
+/// @example scss - 사용법
+/// .foo {
+///     @include Nposition(top bottom left);
+/// }
+/// .foo_2 {
+///     @include Nposition();
+/// }
+/// @example css - 아웃풋
+/// .foo {
+///     position: absolute;
+///     top: 0;
+///     bottom: 0;
+///     left: 0;
+/// }
+/// .foo_2 {
+///     position: absolute;
+///     top: 0;
+///     right: 0;
+///     bottom: 0;
+///     left: 0;
+/// }
+@mixin Nabsolute($args: ()) {
+	position: absolute;
+	$offsets: top right bottom left;
+
+	@if $args == () {
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+
+	} @else {
+
+		@each $offset in $offsets {
+			$index: index($args, $offset);
+
+			@if $index {
+				@if $index == length($args) {
+					#{$offset}: 0;
+				}
+				@else {
+					$next: nth($args, $index);
+					@if index($offsets, $next) {
+						#{$offset}: 0;
+					}
+					@else {
+						@warn "Invalid value `#{$next}` for offset `#{$offset}`.";
+					}
+				}
+			}
+		}
+	}
+}
+
+@mixin Nabsolute($args: ()) {
+	@include Nposition(absolute, $args);
+}
+
+@mixin Nfixed($args: ()) {
+	@include Nposition(fixed, $args);
+}
+
+@mixin Nrelative($args: ()) {
+	@include Nposition(relative, $args);
+}
+
+/// N줄 말줄임
+/// @group 기본 mixin
+/// @param {number} $lines [null] - 줄 수 입력
+/// @example scss - 사용법
+/// .foo {
+///     @include Nellipsis(3);
+/// }
+/// @example css - 아웃풋
+/// .foo {
+///     display: -webkit-box;
+///     overflow: hidden;
+///     text-overflow: ellipsis;
+///     -webkit-line-clamp: $lines;
+///     -webkit-box-orient: vertical;
+/// }
+@mixin Nellipsis ($lines: null) {
+	@if ($lines == null) {
+		overflow:hidden;
+		text-overflow:ellipsis;
+		white-space:nowrap;
+	} @else {
+		display: -webkit-box;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		-webkit-line-clamp: $lines;
+		-webkit-box-orient: vertical;
+	}
+}
+
+/// 가상 엘리먼트로 float clear
+/// @group 기본 mixin
+/// @param {display} $display [table] - display 속성 입력
+/// @example scss - 사용법
+/// .foo {
+///     @include Nclear();
+/// }
+/// @example css - 아웃풋
+/// .foo {
+///      display: table;
+///      table-layout: fixed;
+///      clear:both;
+///      content: '';
+/// }
+@mixin Nclear($display: table){
+	display: $display;
+
+	@if($display == table) {
+		table-layout: fixed;
+	}
+	clear: both;
+	content: '';
+}
+
+@function make-name-list ($sprite_map, $key_name){
+	$sprite_name_map: map-get($sprite_map, $key_name);
+	$sprite_name_list: map-keys($sprite_name_map);
+	@return $sprite_name_list;
+}
+
+/// X 모양 아이콘
+/// @group CSS icon
+/// @param {number} $size [21px] - 아이콘 넓이, 높이값 (반드시 짝수값 입력)
+/// @param {number} $thick [2px] - 아이콘 내 막대의 두께값
+/// @param {color} $color [#000] - 아이콘 막대 색상값
+/// @param {number} $padding [0] - 아이콘 여백값
+/// @param {inline-block/block} $display [inline-block] - display 속성값
+/// @example .icon_cancel { iconCancel($size: 24px, $thick: 2px, $color: #000, $padding: 0, $display: inline-block); }
+/// @example
+///	.icon_cancel {
+///		@include iconCancel(16px, 3px, #aaa, 5px, block);
+///		@include setCircleBackground(#eee);
+///	}
+@mixin iconCancel($size: 24px, $thick: 2px, $color: #000, $padding: 0, $display: inline-block){
+	position: relative;
+	display: $display;
+	width: $size + $padding*2;
+	height: $size + $padding*2;
+
+	&:before, &:after {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: round($size*$sqrt_2) - $thick;
+		height: $thick;
+		background-color: $color;
+		content: '';
+	}
+
+	&:before {
+		transform: translate(-50%, -50%) rotate(45deg);
+	}
+
+	&:after {
+		transform: translate(-50%, -50%) rotate(135deg);
+	}
+}
+
+/// 삼각형 모양 아이콘 (보통, 접기[up]/펼치기[down] 아이콘으로 사용)
+/// @group CSS icon
+/// @param {string} $direction ['up'] - 화살표 방향 ('up', 'down', 'left', 'right')
+/// @param {number} $width [20px] - 아이콘 넓이값 ('up' or 'down'인 경우, 반드시 짝수값 입력)
+/// @param {number} $height [10px] - 아이콘 높이값 ('left' or 'right'인 경우, 반드시 짝수값 입력)
+/// @param {color} $color [#000] - 아이콘 색상값
+/// @param {inline-block/block} $display [inline-block] - display 속성값
+/// @example .icon_triangle_up { iconTriangle($direction: 'up', $width: 20px, $height: 10px, $color: #000, $display: inline-block); }
+/// @example .icon_triangle_left { iconTriangle($direction: 'left', $width: 15px, $height: 20px, $color: #000, $display: inline-block); }
+@mixin iconTriangle($direction: 'up', $width: 20px, $height: 10px, $color: #000, $display: inline-block){
+	display: $display;
+	width: $width;
+	height: $height;
+
+	&:before {
+		display: block;
+		content: '';
+
+		@if ($direction == 'up'){
+			border-top: none;
+			border-bottom: $height solid $color;
+			border-left: round($width/2) solid transparent;
+			border-right: round($width/2) solid transparent;
+		}
+		@else if ($direction == 'down'){
+			border-top: $height solid $color;
+			border-right: none;
+			border-left: round($width/2) solid transparent;
+			border-right: round($width/2) solid transparent;
+		}
+		@else if ($direction == 'left'){
+			border-top: round($height/2) solid transparent;
+			border-right: none;
+			border-bottom: round($height/2) solid transparent;
+			border-right: $width solid $color;
+		}
+		@else if ($direction == 'right'){
+			border-top: round($height/2) solid transparent;
+			border-right: none;
+			border-bottom: round($height/2) solid transparent;
+			border-left: $width solid $color;
+		}
+	}
+}
+
+/// 화살표형 아이콘 (보통, 이전[left]/다음[right] 또는 더보기[right], 접기[up]/펼치기[down] 버튼 아이콘으로 사용)
+/// @group CSS icon
+/// @param {string} $direction ['up'] - 화살표 방향 ('up', 'down', 'left', 'right')
+/// @param {number} $width [50px] - 아이콘 넓이값
+/// @param {number} $height [25px] - 아이콘 높이값
+/// @param {number} $thick [2px] - 화살표 두께값
+/// @param {color} $color [#000] - 화살표 색상값
+/// @param {inline-block/block} $display [inline-block] - display 속성값
+/// @example .icon_bullet_up { iconBullet($direction: 'up', $width: 50px, $height: 25px, $thick: 2px, $color: #222, $display: inline-block); }
+/// @example
+/// .icon_bullet_left {
+///		@include iconBullet('left', 52px, 26px, 2px);
+///		@include setIconShadow_type1(0, 1px, 4px, 0, rgba(0, 0, 0, 0.2));
+/// }
+@mixin iconBullet($direction: 'up', $width: 50px, $height: 25px, $thick: 2px, $color: #222, $display: inline-block, $position: relative){
+	display: $display;
+	overflow: hidden;
+	position: $position;
+	width: $width;
+	height: $height;
+
+	&:before {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		content: '';
+	}
+
+	@if ($direction == 'up' or $direction == 'down') {
+		$size: floor($width/$sqrt_2 - 2*$thick);
+		$rate: 2*$height/$width;
+		$margin-top : round($rate*$size/(2*$sqrt_2));
+
+		&:before {
+			width: $size;
+			height: $size;
+			@if ($rate == 1) {
+				transform: translate(-50%, -50%) rotate(45deg);
+			} @else {
+				transform: translate(-50%, -50%) scale(1, $rate) rotate(45deg);
+			}
+
+			@if ($direction == 'up') {
+				margin-top: $margin-top;
+				border-top: $thick solid $color;
+				border-left: $thick solid $color;
+			} @else if ($direction == 'down') {
+				margin-top: - $margin-top;
+				border-right: $thick solid $color;
+				border-bottom: $thick solid $color;
+			}
+		}
+	}  @else if ($direction == 'left' or $direction == 'right') {
+		$size: floor($height/$sqrt_2 - 2*$thick);
+		$rate: 2*$width/$height;
+		$margin-left : round($rate*$size/(2*$sqrt_2));
+
+		&:before {
+			width: $size;
+			height: $size;
+			transform: translate(-50%, -50%) scale($rate, 1) rotate(45deg);
+
+			@if ($direction == 'left') {
+				margin-left: $margin-left;
+				border-left: $thick solid $color;
+				border-bottom: $thick solid $color;
+			}  @else if ($direction == 'right') {
+				margin-left: - $margin-left;
+				border-top: $thick solid $color;
+				border-right: $thick solid $color;
+			}
+		}
+	}
+}
+
+/// 햄버거 메뉴 아이콘
+/// @group CSS icon
+/// @param {number} $width [21px] - 막대 넓이값
+/// @param {number} $thick [2px] - 막대 두께값
+/// @param {number} $interval [6px] - 막대 간 간격
+/// @param {color} $color [#000] - 막대 색상값
+/// @param {inline-block/block} $display [inline-block] - display 속성값
+/// @example .icon_menu { @include iconMenu($width: 21px, $thick: 2px, $interval: 6px, $color: #000, $display: inline-block); }
+@mixin iconMenu($width: 21px, $thick: 2px, $interval: 6px, $color: #000, $display: inline-block, $position: relative) {
+	display: $display;
+	position: $position;
+	width: $width;
+	height: ($thick*3 + $interval*2);
+
+	&:before, &:after {
+		position: absolute;
+		left: 0;
+		width: $width;
+		content: '';
+	}
+
+	&:before {
+		top: ($thick + $interval);
+		height: $thick;
+		background-color: $color;
+	}
+
+	&:after {
+		top: 0;
+		height: ($thick + $interval*2);
+		border-top: $thick solid $color;
+		border-bottom: $thick solid $color;
+	}
+}
+
+/// 화살표형 아이콘 (보통, 이전[left]/다음[right] 또는 더보기[right], 접기[up]/펼치기[down] 버튼 아이콘으로 사용)
+/// @group CSS icon
+/// @param {string} $direction ['up'] - 화살표 방향 ('up', 'down', 'left', 'right')
+/// @param {number} $width [50px] - 아이콘 넓이값
+/// @param {number} $height [25px] - 아이콘 높이값
+/// @param {number} $thick [2px] - 화살표 두께값
+/// @param {color} $color [#000] - 화살표 색상값
+/// @param {inline-block/block} $display [inline-block] - display 속성값
+/// @example .icon_bullet_up { iconBullet($direction: 'up', $width: 50px, $height: 25px, $thick: 2px, $color: #222, $display: inline-block); }
+/// @example
+/// .icon_bullet_left {
+///		@include iconBullet('left', 52px, 26px, 2px);
+///		@include setIconShadow_type1(0, 1px, 4px, 0, rgba(0, 0, 0, 0.2));
+/// }
+@mixin iconBullet($direction: 'up', $width: 50px, $height: 25px, $thick: 2px, $color: #222, $display: inline-block, $position: relative){
+	display: $display;
+	overflow: hidden;
+	position: $position;
+	width: $width;
+	height: $height;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+	}
+
+	@if ($direction == 'up' or $direction == 'down') {
+		$size: floor($width/$sqrt_2 - 2*$thick);
+		$rate: 2*$height/$width;
+		$margin-top : round($rate*$size/(2*$sqrt_2));
+
+		&:before {
+			width: $size;
+			height: $size;
+			@if ($rate == 1) {
+				transform: translate(-50%, -50%) rotate(45deg);
+			} @else {
+				transform: translate(-50%, -50%) scale(1, $rate) rotate(45deg);
+			}
+
+			@if ($direction == 'up') {
+				margin-top: $margin-top;
+				border-top: $thick solid $color;
+				border-left: $thick solid $color;
+			} @else if ($direction == 'down') {
+				margin-top: - $margin-top;
+				border-right: $thick solid $color;
+				border-bottom: $thick solid $color;
+			}
+		}
+	}  @else if ($direction == 'left' or $direction == 'right') {
+		$size: floor($height/$sqrt_2 - 2*$thick);
+		$rate: 2*$width/$height;
+		$margin-left : round($rate*$size/(2*$sqrt_2));
+
+		&:before {
+			width: $size;
+			height: $size;
+			transform: translate(-50%, -50%) scale($rate, 1) rotate(45deg);
+
+			@if ($direction == 'left') {
+				margin-left: $margin-left;
+				border-left: $thick solid $color;
+				border-bottom: $thick solid $color;
+			}  @else if ($direction == 'right') {
+				margin-left: - $margin-left;
+				border-top: $thick solid $color;
+				border-right: $thick solid $color;
+			}
+		}
+	}
+}
+
+/// X 모양 아이콘
+/// @group CSS icon
+/// @param {number} $size [21px] - 아이콘 넓이, 높이값 (반드시 짝수값 입력)
+/// @param {number} $thick [2px] - 아이콘 내 막대의 두께값
+/// @param {color} $color [#000] - 아이콘 막대 색상값
+/// @param {number} $padding [0] - 아이콘 여백값
+/// @param {inline-block/block} $display [inline-block] - display 속성값
+/// @example .icon_cancel { iconCancel($size: 24px, $thick: 2px, $color: #000, $padding: 0, $display: inline-block); }
+/// @example
+///	.icon_cancel {
+///		@include iconCancel(16px, 3px, #aaa, 5px, block);
+///		@include setCircleBackground(#eee);
+///	}
+@mixin iconCancel($size: 24px, $thick: 2px, $color: #000, $padding: 0, $display: inline-block){
+	position: relative;
+	display: $display;
+	width: $size + $padding*2;
+	height: $size + $padding*2;
+
+	&:before, &:after {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: round($size*$sqrt_2) - $thick;
+		height: $thick;
+		background-color: $color;
+		content: '';
+	}
+
+	&:before {
+		transform: translate(-50%, -50%) rotate(45deg);
+	}
+
+	&:after {
+		transform: translate(-50%, -50%) rotate(135deg);
+	}
+}
+
+//버릴지 말지
+//반응형
+@mixin l_MediaQuery($l_MediaQuerycase: 'l_pc_small') {
+	@if ($l_MediaQuerycase == 'l_pc_small') {
+		// 너비1280px 이상(실사이즈 1180px)
+		@media (min-width: 1280px) {
+			@content;
+		}
+	} @else if ($l_MediaQuerycase == 'l_pc_medium') {
+		// 너비1440px 이상(실 사이즈 1280px)
+		@media (min-width: 1440px) {
+			@content;
+		}
+	}
+}
+

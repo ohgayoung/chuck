@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="35px" viewBox="0 0 35 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>경사로_비 copy 10</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0.450414463" y="0.374288087" width="28.8021582" height="28.8021582" rx="14.4010791"></rect>
+        <filter x="-19.1%" y="-12.2%" width="138.2%" height="138.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.252915534 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="s9-copy-3" transform="translate(-224.000000, -313.000000)">
+            <g id="경사로_비-copy-10" transform="translate(225.923061, 313.837919)">
+                <g id="경사로icon" stroke-width="1" fill-rule="evenodd" transform="translate(0.091752, 0.220815)">
+                    <g id="Rectangle-Copy-12" fill-rule="nonzero">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <rect stroke="#4A90E2" stroke-width="1.12" stroke-linejoin="square" fill="#FFFFFF" fill-rule="evenodd" x="1.01041446" y="0.934288087" width="27.6821582" height="27.6821582" rx="13.8410791"></rect>
+                    </g>
+                </g>
+                <rect id="Rectangle-19" stroke="#4A90E2" stroke-width="0.96" fill-rule="nonzero" x="9.1686875" y="8.74803265" width="12.062625" height="5.87546875"></rect>
+                <path d="M9.070197,14.5064201 C8.4040969,15.2616539 8.03086924,16.2133313 7.95189397,17.3773993 L22.4487054,17.3773993 C22.3726232,16.2118707 22.0127957,15.2587978 21.3715591,14.5034358 C21.2224961,14.504052 21.0275049,14.5048344 20.7920042,14.5057434 C20.165674,14.5081608 19.4804423,14.5105782 18.7584212,14.5128344 C17.4767126,14.5168396 16.2212046,14.5198928 15.0440911,14.5216135 C12.1355309,14.5258651 10.0363149,14.5216331 9.070197,14.5064201 Z" id="Rectangle-19-Copy" stroke="#4A90E2" stroke-width="0.96" fill-rule="nonzero"></path>
+                <rect id="Rectangle-20" fill="#4A90E2" fill-rule="nonzero" x="8.864" y="10.0928295" width="12.672" height="1"></rect>
+                <rect id="Rectangle-20-Copy" fill="#4A90E2" fill-rule="nonzero" x="8.864" y="12.2227045" width="12.672" height="1"></rect>
+                <rect id="Rectangle" fill="#4A90E2" fill-rule="nonzero" x="7.456" y="17.8573993" width="1" height="4.928"></rect>
+                <rect id="Rectangle-Copy" fill="#4A90E2" fill-rule="nonzero" x="21.984" y="17.8573993" width="1" height="4.928"></rect>
+                <rect id="Rectangle-Copy-2" fill="#4A90E2" fill-rule="nonzero" x="10.6612969" y="17.8573993" width="1" height="3.58428125"></rect>
+                <rect id="Rectangle-Copy-3" fill="#4A90E2" fill-rule="nonzero" x="19.1454844" y="17.8573993" width="1" height="3.58428125"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

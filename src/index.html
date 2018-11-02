@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>[페이지] 메인</title>
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/components.css">
+    <script src="./js/flicking.pkgd.min.js"></script>
+    <script src="./js/OpacityEffect.min.js"></script>
+    <script src="./js/ParallaxEffect.min.js"></script>
+</head>
+
+<body>
+    <div id="wrap" class="wrap">
+        <!-- header -->
+        <div class="header">
+        <div class="main_header">
+            <em class="title title_index"><span class="blind">나라선택</span></em>
+            <i class="icon_search"></i>
+        </div>
+    </div>
+        <!-- //header -->
+        <div class="container">
+            <div class="content">
+                <div class="sub_header"></div>
+                <i class="icon_filter"></i>
+                <div class="group_list_nation_card">
+                    <ul id="listNationCard" class="list_nation_card">
+                        <li class="item"><a href="#" class="inner" style="background-image: url(./img/nation_card_paris.png);"></a></li>
+                        <li class="item"><a href="#" class="inner" style="background-image: url(./img/nation_card_barcelona.png);"></a></li>
+                        <li class="item"><a href="#" class="inner" style="background-image: url(./img/nation_card_london.png);"></a></li>
+                    </ul>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <div id="intro"></div>
+    <script>
+        var intro = document.getElementById('intro');
+        intro.addEventListener('click', function(e){
+            intro.style.display = "none";
+        }); 
+        var flickCardComponent = new eg.Flicking("#listNationCard");
+
+        var listNationCard = document.getElementById('listNationCard');
+
+        listNationCard.addEventListener('click', function(e){
+            console.log(e.target.classList);
+            if(e.target.classList.contains('inner')){
+                window.location.href = './page_set_style.html';
+            }
+        });
+    </script>
+</body>
+
+</html>

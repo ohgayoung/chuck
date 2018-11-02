@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+.article_map {
+    position: relative;
+    height: calc(100vh - 234px);
+    background-image: url(../img/map_effieltower.png);
+    // background-image: url(../img/back_withspot.png);
+    background-size: cover;
+
+
+    .round_range {
+        position: absolute;
+        z-index: 5;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 200px;
+        height: 200px;
+        border: 2px dotted #4A90E2;
+        border-radius: 50%;
+
+        &:after {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity: 0.22;
+            background-color: #A9DAF9;
+            border-radius: 50%;
+            content: '';
+        }
+    }
+
+    .icon_map_spot {
+        @include get-sprite('icon_spot_map', $sp_common, (get-image: true));
+
+        position: absolute;
+        z-index: 5;
+        transform: scale(0, 0);
+        pointer-events: none;
+        transition: all 0.3s ease-out;
+        
+        &.is_visible {
+            transform: scale(1, 1);
+            pointer-events: auto;
+            cursor: pointer;
+
+            &.is_active {
+                @include get-sprite('icon_spot_map_active', $sp_common, (get-image: true));
+            }
+        }
+
+        // 에펠탑
+        &.spot_effiel {
+            top: 184px;
+            left: 152px;
+        }
+
+        &.spot_chaillot {
+            top: 166px;
+            left: 105px;
+        }
+
+        &.spot_peacewall {
+            top: 262px;
+            left: 219px;
+        }
+
+        &.spot_birhakeim {
+            top: 232px;
+            left: 99px;
+        }
+
+        &.spot_triomphe {
+            top: 42px;
+            left: 157px;
+        }
+
+        &.spot_rodinMusuem {
+            top: 209px;
+            left: 267px;
+        }
+
+        &.spot_unname_1 {
+            top: 46px;
+            left: 239px;
+        }
+
+        &.spot_unname_2 {
+            top: 137px;
+            left: 261px;
+        }
+    }
+}

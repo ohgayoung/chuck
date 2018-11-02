@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="53" height="53" viewBox="0 0 53 53">
+  <defs>
+    <rect id="button_view_active-b" width="43.203" height="43.203" x=".676" y=".561" rx="21.602"/>
+    <filter id="button_view_active-a" width="139.3%" height="139.3%" x="-19.7%" y="-15%" filterUnits="objectBoundingBox">
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2.5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.252915534 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(4.783 1.783)">
+    <g fill-rule="nonzero" transform="translate(.138 .331)">
+      <use fill="#000" filter="url(#button_view_active-a)" xlink:href="#button_view_active-b"/>
+      <use fill="#ED744A" xlink:href="#button_view_active-b"/>
+    </g>
+    <path stroke="#FFF" stroke-width="1.2" d="M18.4664966,23.8906174 L15.9596561,31.3110849 C15.953804,31.3284078 15.950819,31.3465699 15.950819,31.3648546 C15.950819,31.4576384 16.0260352,31.5328546 16.118819,31.5328546 L28.5562286,31.5328546 C28.575512,31.5328546 28.5946516,31.5295346 28.6128085,31.5230402 C28.7001721,31.491792 28.7456625,31.3956381 28.7144143,31.3082746 L26.0612624,23.8906174 L18.4664966,23.8906174 Z"/>
+    <path stroke="#FFF" stroke-linecap="round" stroke-width="1.2" d="M14.8648546,27.9615284 C11.5187069,28.7163349 9.33215406,29.9643568 9.33215406,31.376189 C9.33215406,33.6801077 15.1549033,35.5478027 22.3376284,35.5478027 C29.5203536,35.5478027 35.3431028,33.6801077 35.3431028,31.376189 C35.3431028,29.9974546 33.2578676,28.77494 30.0438098,28.0154225"/>
+    <circle cx="22.338" cy="17.237" r="8.507" fill="#ED744A" fill-rule="nonzero" stroke="#FFF" stroke-width="1.2"/>
+    <circle cx="22.338" cy="18.362" r="4.328" stroke="#FFF" stroke-width="1.2"/>
+  </g>
+</svg>

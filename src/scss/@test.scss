@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* markup 확인용 css */
+
+/* uio_common */
+#uio_common #container{padding:20px 0;}
+#uio_common .guide_bx{position:relative;padding-bottom:20px;}
+#uio_common .guide_txt{height:30px;background:#000}
+#uio_common .guide_txt p{padding-left:20px;color:#ff0;font-size:16px;font-weight:bold;line-height:30px}
+#uio_common .guide_txt p em{color:#fff;font-size:12px;font-weight:normal}
+#uio_common .bar_fix_wrap{position:relative;}
+#uio_common .end_list_wrap{margin:0;padding:0;border:0 none;}
+
+/* uio_snb */
+#uio_snb .guide_bx{overflow:hidden;position:relative}
+#uio_snb .guide_txt{height:30px;background:#000}
+#uio_snb .guide_txt p{padding-left:20px;color:#ff0;font-size:16px;font-weight:bold;line-height:30px}
+
+/* uio_aside_login */
+#uio_aside_login .guide_bx{overflow:hidden;position:relative}
+#uio_aside_login .guide_bx .login{float:left;margin:0 20px 20px}
+#uio_aside_login .guide_bx .aside{float:left;margin:0 20px 20px;padding:0;min-height:0;}
+#uio_aside_login .guide_bx:nth-child(2) .aside{border:0 none;}
+#uio_aside_login .guide_txt{height:30px;margin-bottom:20px;background:#000}
+#uio_aside_login .guide_txt p{padding-left:20px;color:#ff0;font-size:16px;font-weight:bold;line-height:30px}
+#uio_aside_login .guide_txt p em{color:#fff;font-size:12px;font-weight:normal}
+#uio_aside_login .layer_base{position:absolute;top:50px;left:650px}
+#uio_aside_login .btn_after_login{float:left;border:1px solid red;margin:0 10px;padding:10px;border-radius:5px;}
+#uio_aside_login .btn_after_login p{font-weight:bold;}
+#uio_aside_login .btn_after_login .btn_tit{padding:10px 0 5px;font-size:13px;color:red;}
+#uio_aside_login .btn_after_login button{padding:3px;margin:2px 0 2px 5px;border:1px solid red;border-radius:3px;}
+#uio_aside_login .btn_after_login button.on{color:#fff;background:red;}
+
+/* uio_snb */
+#uio_alarm_massage .guide_bx{overflow:hidden;position:relative}
+#uio_alarm_massage .guide_txt{height:30px;background:#000}
+#uio_alarm_massage .guide_txt p{padding-left:20px;color:#ff0;font-size:16px;font-weight:bold;line-height:30px}
+
+/* 전체 */
+#wrap{overflow:visible;}
+#container{padding:50px 0;}
+.my_personal + .my_personal{margin-top:50px;}
+.my_personal .profile_group .profile_animate{height:134px;}
+.box01{z-index:1001}
+.qna_help_answer{left:762px;}
+.ifr_qna .box_highlight_on{border:2px solid #5fc542;}
+
+/* pop_print */
+#print_wrap .end_qbox{height:400px;}
+
+/* qna_detail */
+.end_qbox .tit_ico img{display:block;}
+.end_qbox .profile_animate{display:block;}
+.end_qbox .end_content, .end_qbox .vs_area{overflow:visible;}
+.end_qbox .cardarea{position:relative;}
+
+/* ly_common.html */
+#ly_common .layer_base, #ly_common .layer_base2, #ly_common .ly_app, #ly_common .layer_popup_default, #ly_common .photo_view_wp, #ly_common .layer_wrap, #ly_common .section_layer, #ly_common .layer_image_cover{display:block;position:relative !important;top:0 !important;left:0 !important;margin:0 !important;}
+#ly_common .end_qna_link{padding:0;}
+#ly_common .section_layer .layer_wrap{border:1px solid rgba(0,0,0,0.5);}
+.layer_wrap.kini_type_answer{height:auto;max-height:none;}
+/* myinfo.html */
+.layer_p, .btn_qual_popup {position: fixed; top: 0; left: 0; z-index: 9999; padding: 10px; border: 1px solid #f00; background: #fff;}
+.layer_p button, .btn_qual_popup button {padding: 5px; border: 1px solid #f00; background: #fff;}
+.btn_qual_popup button.on{color:#fff;background-color:#f00}
+
+#wrap h1 {line-height: normal; text-decoration: underline; color: #fff;}
+
+/* 공통 로그인 영역 */
+.btn_toggle {position: absolute; top: 0; right: 0; border: 1px solid #f00;}
+.btn_toggle button {display: block; width: 50px; padding: 5px; text-align: center; color: #000; cursor: pointer; border-top: 1px solid #f00;}
+.btn_toggle button:first-child {border: 0;}
+
+/* n주년 이벤트 레이어 */
+._btn_event {position: absolute; top: 0; right: 0; z-index: 100; border: 1px solid #f00;}
+._btn_event button { display: block; width: 150px; padding: 10px; background-color:rgba(0,0,0,0.3); border-top: 1px solid #f00;}
+._btn_event button:first-child {border: 0;}
+._btn_event button.is_active {background: #48ff38;}
+
+/* 핫토픽 키워드 영역 */
+._btn_hottopic_keyword { position: fixed; right: 100px; bottom: 100px; z-index: 1251; border: 1px solid #f00; }
+._btn_hottopic_keyword .title { height: 26px; background-color: #fff; line-height: 26px; font-weight: bold; text-align: center; }
+._btn_hottopic_keyword button { display: block; width: 200px; padding: 4px 2px; background-color: #c0c0c0; border-top: 1px solid #f00; outline: 1px solid transparent; text-align:left;}
+._btn_hottopic_keyword button:first-child { border-top: none; }
+._btn_hottopic_keyword .is_active { background-color: #48ff38; }
+._btn_hottopic_keyword .btn_close { position: absolute; top: -20px; right: -1px; width: 20px; height: 19px; border-top: none; background-color: #eee; font-size: 16px; }
+
+/* 지식파트너 통계영역 */
+._btn_partner_stats { position: fixed; right: 100px; bottom: 100px; z-index: 1251; width: 140px; border: 1px solid #ccc; text-align: center; font-size: 13px; }
+._btn_partner_stats .title { height: 30px; background-color: #ccc;line-height: 30px;}
+._btn_partner_stats button {width: 100%; border-top: 1px solid #ccc; background-color: #fff; line-height: 30px;}
+._btn_partner_stats button.is_active { background-color: #00c73c; color:#fff;}
+._btn_partner_stats .btn_close {position:absolute; width: 20px; height: 20px;top:-23px;right:0;background-color:#fff;border:1px solid #ccc;line-height: 20px;font-size:14px;text-decoration: none;}
+
+/* 홈 배너 이미지 타입 */
+._btn_event_banner {
+    top: 350px;
+}
+
+._btn_event_banner_type {
+    top: 200px;
+}
+
+._btn_event_banner, ._btn_event_banner_type {
+    position: absolute;
+    right: 0;
+    z-index: 100;
+    border: 1px solid #f00;
+
+    .title {
+        text-align: center;
+        font-size: 13px;
+        line-height: 24px;
+        background-color: #fff;
+        font-weight: bold;
+    }
+
+    button {
+        display: block;
+        width: 150px;
+        padding: 10px;
+        background-color:rgba(0,0,0,0.3);
+        border-top: 1px solid #f00;
+
+        &:first-child {
+            border: 0;
+        }
+
+        &.is_active {
+            background-color: #48ff38;
+        }
+    }
+}

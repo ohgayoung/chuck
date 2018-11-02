@@ -1,0 +1,267 @@
+@charset "UTF-8";
+
+body {
+    overflow: hidden;
+    background-color: #FBF8F2;
+}
+
+#intro {
+    position: absolute;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/bg_intro.png);
+    background-size: cover;
+}
+
+.sub_header {
+    position: relative;
+    z-index: 1;
+    margin-top: 1px;
+    height: 34px;
+    background-color: #F2EBDD;
+    text-align: center;
+
+    &:before {
+        @include get-sprite('icon_sort', $sp_common, (get-image: true));
+
+        display: inline-block;
+        margin-top: 9px;
+        content: '';
+    }
+}
+
+.container {
+    position: relative;
+
+    .icon_filter {
+        @include get-sprite('icon_filter', $sp_common, (get-image: true));
+
+        position: absolute;
+        top: 50px;
+        right: 26px;
+    }
+
+    .group_list_nation_card {
+        overflow-y: auto;
+        height: calc(100vh - 89px);
+        padding-top: 72px;
+    }
+
+    .list_nation_card {
+        overflow-x: auto;
+        height: 100%;
+        white-space: nowrap;
+
+        &::-webkit-scrollbar { 
+            display: none; 
+        }
+
+        .item {
+            display: inline-block;
+            width: 100%;
+            margin: 0 37.5px;
+
+            &:last-child {
+                margin-right: 25px;
+            }
+
+            .inner {
+                display: block;
+                width: 300px;
+                height: 452px;
+                background-size: cover;
+            }
+        }
+    }
+
+    .group_list_course_style {
+        overflow-y: auto;
+        height: 505px;
+        margin-top: 21px;
+    }
+
+    .group_list_attraction {        
+        .title {
+            display: block;
+            margin: 19px 0 0 28px;
+            font-family: AppleSDGothicNeo-SemiBold;
+            font-size: 14px;
+            color: #303030;
+            letter-spacing: -0.4px;
+        }
+
+        .item {
+            display: inline-block;
+            margin-bottom: 8px;
+
+            .inner {
+                display: block;
+                width: 300px;
+                height: 150px;
+                background-size: cover;
+            }
+        }
+    }
+
+    .list_attraction {
+        margin-top: 8px;
+        text-align: center;
+    }
+
+    .list_course_style {
+        text-align: center;
+
+        &::-webkit-scrollbar { 
+            display: none; 
+        }
+
+        .item {
+            display: inline-block;
+            margin-bottom: 4px;
+            
+            &:last-child {
+                margin-bottom: 15px;
+            }
+
+            .inner {
+                display: block;
+                width: 304px;
+                height: 114px;
+                background-size: cover;
+            }
+        }
+
+    }
+
+    .icon_help_1 {
+        display: block;
+        width: 340px;
+        height: 67px;
+        margin: 19px auto 0;
+        background-image: url(../img/icon_help_1.png);
+        background-size: cover;
+    }
+
+    .icon_help_2 {
+        display: block;
+        width: 340px;
+        height: 67px;
+        margin: 19px auto 0;
+        background-image: url(../img/icon_help_2.png);
+        background-size: cover;
+    }
+
+    .group_attraction_desc {
+        overflow-y: auto;
+        height: calc(100vh - 55px);
+
+        &::-webkit-scrollbar { 
+            display: none; 
+        }
+
+        .attraction_desc {
+            position: relative;
+            height: 1061px;
+            background-size: cover;
+        }
+
+        .button_set_course {
+            position: absolute;
+            z-index: 1;
+            top: 197px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 184px;
+            height: 40px; 
+        }
+    }
+}
+
+.layer_dimed {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.34);
+}
+
+.layer_info_access {
+    position: absolute;
+    top: 170px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 320px;
+    height: 308px;
+    background-size: cover;
+    background-color: #FBF8F2;
+    border-radius: 8px;
+
+    .group_button {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 53px;
+
+        &:after {
+            display: table;
+            clear: both;
+            table-layout: fixed;
+            content: '';
+        }
+    }
+
+    .button_yes {
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+
+    .button_no {
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+}
+
+.list_tuto_map {
+    height: 100vh;
+
+    .item {
+        height: 100vh;
+        background-size: cover;
+    }
+}
+
+.navi_buttons {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    &:after {
+        display: table;
+        table-layout: fixed;
+        clear: both;
+        content: '';
+    }
+    
+    .button_prev {
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+
+    .button_next {
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+}

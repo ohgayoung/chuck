@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="53px" height="53px" viewBox="0 0 53 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>현위치_활 copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0.675621694" y="0.561432131" width="43.2032373" height="43.2032373" rx="21.6016187"></rect>
+        <filter x="-19.7%" y="-15.0%" width="139.3%" height="139.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.252915534 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="s2" transform="translate(-8.000000, -159.000000)">
+            <g id="주변지역_비-copy-2" transform="translate(12.782703, 160.728516)">
+                <g id="경사로icon-copy" stroke-width="1" transform="translate(0.137628, 0.551535)">
+                    <g id="Rectangle-Copy-12" fill-rule="nonzero">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#ED744A" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+                <path d="M29.3894531,16.1355469 L15.3269531,22.059375 L21.3914063,23.9050781 L23.4832031,29.9519531 L29.3894531,16.1355469 Z M30.8484375,14.3425781 C31.0125008,14.3425781 31.1179685,14.4070306 31.1648438,14.5359375 C31.211719,14.6648444 31.1882817,14.8406239 31.0945313,15.0632812 L23.9226563,31.8328125 C23.8523434,31.9968758 23.770313,32.1169918 23.6765625,32.1931641 C23.582812,32.2693363 23.4832037,32.3074219 23.3777344,32.3074219 C23.2839839,32.3074219 23.1873052,32.2751956 23.0876953,32.2107422 C22.9880854,32.1462887 22.9031254,32.04961 22.8328125,31.9207031 L20.5476563,24.8191406 L13.6042969,22.6570312 C13.3230455,22.4812491 13.1912108,22.284962 13.2087891,22.0681641 C13.2263673,21.8513661 13.3874985,21.6785163 13.6921875,21.5496094 L30.4617188,14.4304687 C30.5437504,14.3953123 30.6169919,14.3718751 30.6814453,14.3601562 C30.7458988,14.3484374 30.8015623,14.3425781 30.8484375,14.3425781 Z" id="Cursor---simple-line-icons" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

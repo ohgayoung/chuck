@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>[페이지] 길안내</title>
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/components.css">
+</head>
+
+<body>
+    <div id="wrap" class="wrap">
+        <div class="container">
+            <div class="content">
+                <div id="mapTutoFlick" class="list_tuto_map">
+                    <!-- scene_1 -->
+                    <div class="item" style="background-image:url(./img/navi_start_bg_4.png)" style="display:block;"></div>
+                </div>
+                <div id="naviButtons" class="navi_buttons">
+                    <a href="#" id="buttonNext" class="button_next" style="width: 100%;"><span class="blind">이전 튜토리얼으로</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var naviButtons = document.getElementById('naviButtons');
+
+        function handelTutoPages(e){
+            e.preventDefault();
+            console.log(e.target);
+            if(e.target.id === "buttonNext"){
+                window.location.href = './page_navi_fake_3.html';
+            }
+        } 
+
+        naviButtons.addEventListener('click', handelTutoPages);
+    </script>
+</body>
+
+</html>

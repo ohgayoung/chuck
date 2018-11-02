@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>[페이지] 에펠탑 소개</title>
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/components.css">
+</head>
+
+<body>
+    <div id="wrap" class="wrap">
+        <!-- header -->
+        <%- component('.header[data-select="type_intro_effiel"]', include('/components/header')) %>
+        <!-- //header -->
+        <div class="container">
+            <div class="content">
+                <div class="group_attraction_desc">
+                    <div class="attraction_desc" style="background-image:url(./img/attraction_intro_effile.png)">
+                        <a href="#" id="buttonSetCourse" class="button_set_course"><span class="blind">여행코스짜기</span></a>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="dimed" class="layer_dimed" style="display:none;">
+        <div class="layer_info_access" style="background-image:url('./img/layer_info_access.png')">
+            <div id="groupButton" class="group_button">
+                <a href="#" id="btnYes" class="button_yes" role="button"></a>
+                <a href="#" id="btnNo" class="button_no" role="button"></a>
+            </div>
+        </div>
+    </div>
+    <script>
+        var btnSetCourse = document.getElementById('buttonSetCourse');
+        var layerBtns = document.getElementById('groupButton');
+        var dimedLayer = document.getElementById('dimed');
+
+        var buttonPrev = document.getElementsByClassName('button_prev_page')[0];
+        buttonPrev.addEventListener('click', function(e){
+            e.preventDefault();
+            window.history.go(-1)
+        })
+
+        function handelSetCourse(e){
+            e.preventDefault();
+            dimedLayer.style.display = 'block';
+        }
+
+        function handleLayerButtons(e){
+            var _this = e.target;
+
+            if(_this.id === 'btnYes'){
+                window.location.href = './page_tutorial_map.html';
+            }
+
+            if(_this.id === 'btnNo'){
+                dimedLayer.style.display = 'none';
+            }
+        }
+
+        btnSetCourse.addEventListener('click', handelSetCourse);
+        layerBtns.addEventListener('click', handleLayerButtons);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+{
+  "sp_answer.png": [
+    {
+      "file": "sp_answer_180228.png",
+      "hash": "a5bc59af20944fcd6ea5a5a70d4845560cd85988"
+    },
+    {
+      "file": "sp_answer_180827.png",
+      "hash": "973c6722cf2a6c756f2a11a61ccb76bd895ba99b"
+    }
+  ],
+  "sp_btn_icons.png": [
+    {
+      "file": "sp_btn_icons_171123.png",
+      "hash": "274c764cc65d357c2612decf038d246b10f7213b"
+    },
+    {
+      "file": "sp_btn_icons_180115.png",
+      "hash": "78a77e8cf90150798e02937ec8ae4a846ab7004a"
+    },
+    {
+      "file": "sp_btn_icons_180115.png",
+      "hash": "b0442f27fbe60482f2da81195e9b305eb57e9604"
+    }
+  ],
+  "sp_donation.png": [
+    {
+      "file": "sp_donation_180226.png",
+      "hash": "8d34a26cc0434ef1273e9fac668917b7ed7c90dc"
+    },
+    {
+      "file": "sp_donation_180227.png",
+      "hash": "6fe4903f637c159a20843b771d4890da9679a96f"
+    },
+    {
+      "file": "sp_donation_180228.png",
+      "hash": "1e9f0188e2f2b034e91f7a043f38db74b89a42ef"
+    },
+    {
+      "file": "sp_donation_180306.png",
+      "hash": "2b2b25869e0ba2f12bb1044a491a92da2a39567b"
+    },
+    {
+      "file": "sp_donation_180308.png",
+      "hash": "735e90f6f5d44f5f1aa0dc0e5b5025d24b19426d"
+    }
+  ],
+  "sp_edu.png": [
+    {
+      "file": "sp_edu_180226.png",
+      "hash": "c61d361be745fcd03a9d79f9c70f14bf803b2685"
+    },
+    {
+      "file": "sp_edu_180227.png",
+      "hash": "370118e01d59ed0b05f7d831d5de5c1960ee4c7d"
+    },
+    {
+      "file": "sp_edu_180305.png",
+      "hash": "af6fd2331262627315fe3e740f96906372f58185"
+    },
+    {
+      "file": "sp_edu_180306.png",
+      "hash": "b27b751cc53fcb81a2042754b9f25a8f74909506"
+    }
+  ],
+  "sp_end_title.png": [
+    {
+      "file": "sp_end_title_180122.png",
+      "hash": "c59af298e3ac5d0673f0c5b1cd4021937f5744ab"
+    }
+  ],
+  "sp_icon.png": [
+    {
+      "file": "sp_icon_171121.png",
+      "hash": "394f83086f568089865063c709688a7186ae5afb"
+    },
+    {
+      "file": "sp_icon_180911.png",
+      "hash": "adbf9657732cb556195f82e0334b79ebf51fd22e"
+    }
+  ],
+  "sp_likeit.png": [
+    {
+      "file": "sp_likeit_171220.png",
+      "hash": "8347bdf67f469492e75e07c72f6435c0047c0bf1"
+    },
+    {
+      "file": "sp_likeit_171222.png",
+      "hash": "6c11392724d94ad82ce078b4f44d7b788a09037b"
+    },
+    {
+      "file": "sp_likeit_171228.png",
+      "hash": "7692d77f5ef16c8de51a120036a3bd33bd8c1092"
+    }
+  ],
+  "sp_popup.png": [
+    {
+      "file": "sp_popup_180227.png",
+      "hash": "8cbec7b90b54d20858d19561b91e2fffac92c559"
+    },
+    {
+      "file": "sp_popup_180906.png",
+      "hash": "c107fb1de2c81d7d88668163f9006fdde3c12096"
+    }
+  ],
+  "sp_roulette.png": [
+    {
+      "file": "sp_roulette_180409.png",
+      "hash": "9c768ebccfc7b61f9c2a7308186e35337d73266a"
+    }
+  ],
+  "sp_scholarship.png": [
+    {
+      "file": "sp_scholarship_171122.png",
+      "hash": "8bcdbaf59eae5071f9bcfe4042d1716f4d1a6d6a"
+    },
+    {
+      "file": "sp_scholarship_180223.png",
+      "hash": "edad19e69103198b875617b644cd05399af96b0a"
+    }
+  ],
+  "sp_kin_ai.png": [
+    {
+      "file": "sp_kin_ai_180518.png",
+      "hash": "2c47325aa991a70287d46a16c2b48c677ba468f0"
+    }
+  ],
+  "sp_gnb.svg": [
+    {
+      "file": "sp_gnb_180813.svg",
+      "hash": "a3e4d01beed35690ae7ddf9a260e8e147d798547"
+    },
+    {
+      "file": "sp_gnb_180814.svg",
+      "hash": "bf9f9405caeaee70936a3f698a7e19c8df30c84e"
+    }
+  ],
+  "sp_common.svg": {
+    "file": "sp_common_180820.svg",
+    "hash": "0d196e0edac1549cc27f604435979af8fdf57665"
+  },
+  "sp_end.svg": [
+    {
+      "file": "sp_end_180822.svg",
+      "hash": "160e309401b80b925a5dcd80bc941f84872898df"
+    },
+    {
+      "file": "sp_end_180830.svg",
+      "hash": "3cb7b245ff994b49a7464ec284ef71e7bbe58290"
+    },
+    {
+      "file": "sp_end_180911.svg",
+      "hash": "a3035ed9f0e853d2a2150b1b6a37b6cd71bc147f"
+    },
+    {
+      "file": "sp_end_180920.svg",
+      "hash": "57aea5a653e1055882e0c676eebb06d68ebb1f37"
+    },
+    {
+      "file": "sp_end_180928.svg",
+      "hash": "a618c6d199f34d379e52e9f1a29f01ff43f6343c"
+    }
+  ],
+  "sp_answer.svg": [
+    {
+      "file": "sp_answer_180830.svg",
+      "hash": "bac957d645c665c6c1028489749f059154211c24"
+    }
+  ]
+}

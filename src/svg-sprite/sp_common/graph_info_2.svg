@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="233" height="90" viewBox="0 0 233 90">
+  <defs>
+    <circle id="graph_info_2-b" cx="11.207" cy="10.942" r="10.355"/>
+    <filter id="graph_info_2-a" width="119.3%" height="119.3%" x="-9.7%" y="-4.8%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.507307611   0 0 0 0 0.507307611   0 0 0 0 0.507307611  0 0 0 0.5 0"/>
+    </filter>
+    <circle id="graph_info_2-d" cx="216.165" cy="21.914" r="10.355"/>
+    <filter id="graph_info_2-c" width="119.3%" height="119.3%" x="-9.7%" y="-4.8%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.507307611   0 0 0 0 0.507307611   0 0 0 0 0.507307611  0 0 0 0.5 0"/>
+    </filter>
+    <text id="graph_info_2-f" fill="#FFF" font-family="AppleSDGothicNeo-Regular, Apple SD Gothic Neo" font-size="9.8">
+      <tspan x="8.207" y="14.653">3</tspan>
+    </text>
+    <filter id="graph_info_2-e" width="166.7%" height="112.9%" x="-33.3%" y="-3.2%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+    </filter>
+    <text id="graph_info_2-h" fill="#FFF" font-family="AppleSDGothicNeo-Regular, Apple SD Gothic Neo" font-size="9.8">
+      <tspan x="212.934" y="25.269">4</tspan>
+    </text>
+    <filter id="graph_info_2-g" width="166.7%" height="112.9%" x="-33.3%" y="-3.2%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+    </filter>
+    <rect id="graph_info_2-j" width="14.401" height="14.401" x=".225" y=".187" rx="7.201"/>
+    <filter id="graph_info_2-i" width="148.6%" height="148.6%" x="-24.3%" y="-17.4%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.252915534 0"/>
+    </filter>
+    <rect id="graph_info_2-l" width="14.401" height="14.401" x=".225" y=".187" rx="7.201"/>
+    <filter id="graph_info_2-k" width="148.6%" height="148.6%" x="-24.3%" y="-17.4%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.252915534 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(1 -1)">
+    <path stroke="#CBCBCB" stroke-linecap="square" stroke-width=".5" d="M.110351562 1.84000124L226.610352 1.84000124M.110351562 20.7467482L226.610352 20.7467482M.110351562 39.6534951L226.610352 39.6534951M.110351562 58.5602421L226.610352 58.5602421M.110351562 77.466989L226.610352 77.466989"/>
+    <polyline stroke="#E4E4E4" stroke-width="2" points="17 64 62 3 82 15 82 20 87 20 87 26 92 26 92 31 98 31 98 36.586 104.372 36.586 125.61 44.255 152.367 61.128 219.662 76.467" opacity=".393"/>
+    <polygon points="14.04 63.688 98.407 54.129 125.312 37.401 146.934 75.72 222.934 81.72 14.04 75.72"/>
+    <polyline stroke="#3D4367" stroke-width="2" points="14.04 63.688 98.407 54.129 125.312 37.401 146.934 75.72 222.934 81.72"/>
+    <g transform="translate(4 56)">
+      <g fill-rule="nonzero">
+        <use fill="#000" filter="url(#graph_info_2-a)" xlink:href="#graph_info_2-b"/>
+        <use fill="#3D4367" xlink:href="#graph_info_2-b"/>
+      </g>
+      <g fill-rule="nonzero">
+        <use fill="#000" filter="url(#graph_info_2-c)" xlink:href="#graph_info_2-d"/>
+        <use fill="#3D4367" xlink:href="#graph_info_2-d"/>
+      </g>
+      <g fill="#FFF">
+        <use filter="url(#graph_info_2-e)" xlink:href="#graph_info_2-f"/>
+        <use xlink:href="#graph_info_2-f"/>
+      </g>
+      <g fill="#FFF">
+        <use filter="url(#graph_info_2-g)" xlink:href="#graph_info_2-h"/>
+        <use xlink:href="#graph_info_2-h"/>
+      </g>
+    </g>
+    <g transform="translate(144.96 70.314)">
+      <g fill-rule="nonzero" transform="translate(.046 .11)">
+        <use fill="#000" filter="url(#graph_info_2-i)" xlink:href="#graph_info_2-j"/>
+        <rect width="13.841" height="13.841" x=".505" y=".467" fill="#FFF" fill-rule="evenodd" stroke="#4A90E2" stroke-linejoin="square" stroke-width=".56" rx="6.921"/>
+      </g>
+      <rect width="6.011" height="2.918" x="4.594" y="4.384" stroke="#4A90E2" stroke-width=".5"/>
+      <path stroke="#4A90E2" stroke-width=".5" d="M4.53955671,7.26328099 C4.21195491,7.63632007 4.02742464,8.10543413 3.98666478,8.67869964 L11.213663,8.67869964 C11.174399,8.1046788 10.9965032,7.63484595 10.6811586,7.26173469 C10.6307989,7.26193808 10.5499475,7.26225959 10.3960407,7.2628716 C9.96866596,7.26448323 9.74025497,7.26528904 9.37924187,7.26641717 C8.73838239,7.26841979 8.11062297,7.2699464 7.52206015,7.27080674 C6.07233516,7.2729259 5.0247735,7.27083017 4.53955671,7.26328099 Z"/>
+      <rect width="6.336" height="1" x="4.432" y="5.046" fill="#4A90E2" fill-rule="nonzero"/>
+      <rect width="6.336" height="1" x="4.432" y="6.111" fill="#4A90E2" fill-rule="nonzero"/>
+      <rect width="1" height="2.464" x="3.728" y="8.929" fill="#4A90E2" fill-rule="nonzero"/>
+      <rect width="1" height="2.464" x="10.992" y="8.929" fill="#4A90E2" fill-rule="nonzero"/>
+      <rect width="1" height="1.792" x="5.331" y="8.929" fill="#4A90E2" fill-rule="nonzero"/>
+      <rect width="1" height="1.792" x="9.573" y="8.929" fill="#4A90E2" fill-rule="nonzero"/>
+    </g>
+    <g transform="translate(126.86 51.742)">
+      <g fill-rule="nonzero" transform="translate(.046 .11)">
+        <use fill="#000" filter="url(#graph_info_2-k)" xlink:href="#graph_info_2-l"/>
+        <rect width="13.841" height="13.841" x=".505" y=".467" fill="#FFF" fill-rule="evenodd" stroke="#4A90E2" stroke-linejoin="square" stroke-width=".56" rx="6.921"/>
+      </g>
+      <rect width="6.011" height="2.918" x="4.594" y="4.384" stroke="#4A90E2" stroke-width=".5"/>
+      <path stroke="#4A90E2" stroke-width=".5" d="M4.53955671,7.26328099 C4.21195491,7.63632007 4.02742464,8.10543413 3.98666478,8.67869964 L11.213663,8.67869964 C11.174399,8.1046788 10.9965032,7.63484595 10.6811586,7.26173469 C10.6307989,7.26193808 10.5499475,7.26225959 10.3960407,7.2628716 C9.96866596,7.26448323 9.74025497,7.26528904 9.37924187,7.26641717 C8.73838239,7.26841979 8.11062297,7.2699464 7.52206015,7.27080674 C6.07233516,7.2729259 5.0247735,7.27083017 4.53955671,7.26328099 Z"/>
+      <rect width="6.336" height="1" x="4.432" y="5.046" fill="#4A90E2" fill-rule="nonzero"/>
+      <rect width="6.336" height="1" x="4.432" y="6.111" fill="#4A90E2" fill-rule="nonzero"/>
+      <rect width="1" height="2.464" x="3.728" y="8.929" fill="#4A90E2" fill-rule="nonzero"/>
+      <rect width="1" height="2.464" x="10.992" y="8.929" fill="#4A90E2" fill-rule="nonzero"/>
+      <rect width="1" height="1.792" x="5.331" y="8.929" fill="#4A90E2" fill-rule="nonzero"/>
+      <rect width="1" height="1.792" x="9.573" y="8.929" fill="#4A90E2" fill-rule="nonzero"/>
+    </g>
+  </g>
+</svg>

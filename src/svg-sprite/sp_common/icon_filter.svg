@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="93" height="35" viewBox="0 0 93 35">
+  <defs>
+    <rect id="icon_filter-b" width="88.509" height="30.607" x=".175" y=".64" rx="15.303"/>
+    <filter id="icon_filter-a" width="107.9%" height="122.9%" x="-4%" y="-8.2%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.210541214 0"/>
+    </filter>
+  </defs>
+  <g fill="none" transform="translate(1.825 .955)">
+    <use fill="#000" filter="url(#icon_filter-a)" xlink:href="#icon_filter-b"/>
+    <use fill="#FBF8F2" xlink:href="#icon_filter-b"/>
+    <rect width="13.337" height="16" x="20.578" y="8.29" fill="#ED744A"/>
+    <rect width="7.595" height="7.364" x="53.749" y="8.45" fill="#A18F86"/>
+    <rect width="7.595" height="7.364" x="53.749" y="16.54" fill="#A18F86"/>
+    <rect width="7.595" height="7.364" x="62.186" y="8.45" fill="#A18F86"/>
+    <rect width="7.595" height="7.364" x="62.186" y="16.54" fill="#A18F86"/>
+  </g>
+</svg>

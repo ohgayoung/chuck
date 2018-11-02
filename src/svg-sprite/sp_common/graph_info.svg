@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="233px" height="90px" viewBox="0 0 233 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="15.2070312" cy="66.942354" r="10.3546032"></circle>
+        <filter x="-9.7%" y="-4.8%" width="119.3%" height="119.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.507307611   0 0 0 0 0.507307611   0 0 0 0 0.507307611  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <circle id="path-3" cx="220.16516" cy="77.9141568" r="10.3546032"></circle>
+        <filter x="-9.7%" y="-4.8%" width="119.3%" height="119.3%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.507307611   0 0 0 0 0.507307611   0 0 0 0 0.507307611  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <text id="text-5" font-family="AppleSDGothicNeo-Bold, Apple SD Gothic Neo" font-size="9.8" font-weight="bold" line-spacing="10.8108" fill="#FFFFFF">
+            <tspan x="12.913816" y="70.296754">3</tspan>
+        </text>
+        <filter x="-33.3%" y="-3.2%" width="166.7%" height="112.9%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <text id="text-7" font-family="AppleSDGothicNeo-Bold, Apple SD Gothic Neo" font-size="9.8" font-weight="bold" line-spacing="10.8108" fill="#FFFFFF">
+            <tspan x="216.933796" y="81.2685568">4</tspan>
+        </text>
+        <filter x="-33.3%" y="-3.2%" width="166.7%" height="112.9%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="s9-copy-3" transform="translate(-107.000000, -521.000000)">
+            <g id="Group-3" transform="translate(108.000000, 520.000000)">
+                <polygon id="Path-4-Copy" fill-opacity="0.339079484" fill="#979797" fill-rule="nonzero" opacity="0.288504464" points="14.0400687 63.6879078 98.4068345 54.1288596 125.31224 37.4005252 146.933796 75.7199589 222.933796 81.7199589 14.0400687 75.7199589"></polygon>
+                <polyline id="Path-4-Copy" stroke="#CBCBCB" stroke-width="2" opacity="0.510658482" fill-rule="nonzero" points="14.0400687 63.6879078 98.4068345 54.1288596 125.31224 37.4005252 146.933796 75.7199589 222.933796 81.7199589"></polyline>
+                <path d="M0.110351562,1.84000124 L226.610352,1.84000124" id="Line" stroke="#CBCBCB" stroke-width="0.5" stroke-linecap="square" fill-rule="nonzero"></path>
+                <path d="M0.110351562,20.7467482 L226.610352,20.7467482" id="Line-Copy" stroke="#CBCBCB" stroke-width="0.5" stroke-linecap="square" fill-rule="nonzero"></path>
+                <path d="M0.110351562,39.6534951 L226.610352,39.6534951" id="Line-Copy-2" stroke="#CBCBCB" stroke-width="0.5" stroke-linecap="square" fill-rule="nonzero"></path>
+                <path d="M0.110351562,58.5602421 L226.610352,58.5602421" id="Line-Copy-3" stroke="#CBCBCB" stroke-width="0.5" stroke-linecap="square" fill-rule="nonzero"></path>
+                <path d="M0.110351562,77.466989 L226.610352,77.466989" id="Line-Copy-4" stroke="#CBCBCB" stroke-width="0.5" stroke-linecap="square" fill-rule="nonzero"></path>
+                <polyline id="Path-4" stroke="#3D4367" stroke-width="2" fill-rule="nonzero" points="17 64 62 3 82 15 82 20 87 20 87 26 92 26 92 31 98 31 98 36.585704 104.371969 36.585704 125.609683 44.2551819 152.367257 61.1280332 219.662412 76.466989"></polyline>
+                <polyline id="Path-4" stroke="#ED744A" stroke-width="2" fill-rule="nonzero" points="82 15 82 20 87 20 87 26 92 26 92 31 98 31 98 36.585704 104.371969 36.585704"></polyline>
+                <path d="M61.2580653,3.65250124 L19.0045271,61.6525012" id="Line-5" stroke="#ED744A" stroke-width="2" stroke-linecap="round" fill-rule="nonzero"></path>
+                <g id="Oval-Copy-4" fill-rule="nonzero">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#3D4367" xlink:href="#path-1"></use>
+                </g>
+                <g id="Oval-Copy-5" fill-rule="nonzero">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    <use fill="#3D4367" xlink:href="#path-3"></use>
+                </g>
+                <g id="3-copy" fill="#FFFFFF" fill-opacity="1">
+                    <use filter="url(#filter-6)" xlink:href="#text-5"></use>
+                    <use xlink:href="#text-5"></use>
+                </g>
+                <g id="4-copy" fill="#FFFFFF" fill-opacity="1">
+                    <use filter="url(#filter-8)" xlink:href="#text-7"></use>
+                    <use xlink:href="#text-7"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <style type="text/css">
+        BODY, TD, TH { font-size:13px; font-family:굴림,Gulim; line-height:1.5; color:#404040; }
+        P { margin:0; padding:0; }
+        BLOCKQUOTE { margin-right:0; }
+
+        /* story photo */
+        .storyphoto_layout { border:1px solid #DFDFDF; cursor:pointer; background:url(https://blogimgs.pstatic.net/storyphoto/layout_edit.gif) #FDFDFD center center; }
+        .storyphoto_arrange { border:1px solid #DFDFDF; cursor:pointer; background:url(https://blogimgs.pstatic.net/storyphoto/arrange_edit.gif) #FDFDFD center center; }
+        .storyphoto_relation { border:1px solid #DFDFDF; cursor:pointer; background:url(https://blogimgs.pstatic.net/storyphoto/relation_edit.gif) #FDFDFD center center; }
+        .storyphoto_slide { border:1px solid #DFDFDF; cursor:pointer; background:url(https://blogimgs.pstatic.net/storyphoto/slide_edit.gif) #FDFDFD center center; }
+
+        /* quote style */
+        blockquote.quote01{margin:14px 0px 20px 40px; padding:1px 0 0 9px; background:url(https://blogimgs.pstatic.net/nblog/mylog/post/bg_quote01.gif) repeat-y; color:#444444; line-height:1.4;}
+        /*blockquote.quote01 p{color:#444444; line-height:1.4;}*/
+
+        blockquote.quote02{margin:14px 0px 20px 40px; padding:1px 0 0 12px; background:url(https://blogimgs.pstatic.net/nblog/mylog/post/bg_quote02.gif) left top no-repeat; color:#B2B2B2; line-height:1.2;}
+        /*.quote02 p{background:url(https://blogimgs.pstatic.net/nblog/mylog/post/bg_quote02_2.gif) right top no-repeat; line-height:1.4;}*/
+
+        blockquote.quote02{color:#444444; line-height:1.4;}
+        /*blockquote.quote02 p{background:url(https://blogimgs.pstatic.net/nblog/mylog/post/bg_quote02_2.gif) right bottom no-repeat; line-height:1.4;}*/
+        /*blockquote.quote02 p{line-height:1.4;}*/
+
+        blockquote.quote03{margin:14px 0px 20px 40px; padding:11px 10px 10px 9px; border:1px solid #D9D9D9;color:#444444; line-height:1.4;}
+        /*blockquote.quote03 p{color:#444444; line-height:1.4;}*/
+
+        blockquote.quote04{margin:14px 0px 20px 40px; padding:11px 10px 10px 9px;background-color:#fbfbfb;border:1px solid #D9D9D9; color:#444444; line-height:1.4;}
+        /*blockquote.quote04 p{margin:0; padding:0;}*/
+
+        blockquote.quote05{margin:14px 0px 20px 40px; padding:11px 10px 10px 9px; border:2px solid #707070;color:#444444; line-height:1.4;}
+
+        blockquote.quote06{margin:14px 0px 20px 40px; padding:11px 10px 10px 9px; border:3px solid #707070;color:#444444; line-height:1.4;}
+
+        blockquote.quote07{margin:14px 0px 20px 40px; padding:11px 10px 10px 9px; border:1px dashed #B2B2B2;color:#444444; line-height:1.4;}
+
+        blockquote.quote08{margin:14px 0px 20px 40px; padding:11px 10px 10px 9px; background-color:#fbfbfb; border:1px dashed #B2B2B2;color:#444444; line-height:1.4;}
+        /*blockquote.quote08 p{margin:0; padding:0; }*/
+
+        .correct{padding-bottom:1px; background:url(https://blogimgs.pstatic.net/nblog/mylog/post/bg_correct.gif) left bottom repeat-x;}
+        .info_attach{border:0px; width:430px; height:110px;}
+        .Basicborder {border:1px dashed #BBBBBB}
+        #nhn_summary_split { border:1px dotted black; margin:5px 0px; padding:3px; }
+
+        /* 네이버캐스트 작성자 템플릿 스타일 */
+        .end_today_cont {width:623px; margin:0 0 20px 0; padding:14px 0 13px; border-top:1px solid #f3f3f3; border-bottom:1px solid #f3f3f3; letter-spacing:-1px; font-size:12px; line-height:14px;}
+        .end_today_cont dt {padding-bottom:5px; color:#268e00; font-weight:bold;}
+        .end_today_cont dd {margin:0; color:#272727; letter-spacing:0;}
+        .end_today_cont dd strong {letter-spacing:-1px;}
+        .end_today_cont dd a {color:#272727; }
+        .end_today_cont dd .name {margin-left:6px; padding-left:8px;}
+
+        .end_today_writer {clear:both; width:623px; margin:0; padding:35px 0 39px; overflow:hidden; font-size:12px; line-height:14px;}
+        .end_today_writer .thumb {float:left; width:75px;}
+        .end_today_writer .cont {float:left; width:500px;}
+        .end_today_writer .cont .name {color:#343434;}
+        .end_today_writer .cont .desc {padding-top:7px; color:#989898; font-size:11px; line-height:17px; letter-spacing:-1px;}
+
+        .message{margin-top:-1px;font-size:12px;font-family:'돋움',dotum}
+        .message p{font-size:13px;color:#1e1e1e;letter-spacing:-1px}
+        .message ul{position:relative;margin:6px 0 0;padding:0;list-style:none}
+        .message li{position:relative;padding-left:7px;line-height:19px;color:#424242;zoom:1}
+        .message li em{display:block;position:absolute;top:8px;_top:9px;left:1px;width:2px;height:2px;background:#333;font-size:0;line-height:0}
+        .message li span{display:block;margin-top:2px;font-size:11px;color:#999;line-height:14px}
+
+        .editor__placeholder {font-family:'Helvetica Neue', 'Apple SD Gothic Neo', '맑은 고딕', 'Malgun Gothic', '돋움', Dotum, sans-serif;font-size:16px;color:#909090}
+    </style>
+</head>
+<body style="font-family:굴림,Gulim;margin:10px 0 0 5px;_margin:10px 0 0 10px;padding:0 15px;_padding:0 0 0 12px;" contenteditable="true">
+<div class="editor__placeholder">
+    아래와 같은 내용이 포함된 답변은 게시물 삭제와 함께 서비스 이용에 제한 받을 수 있습니다.<br><br>
+    1. 개인정보(실명, 전화번호, 카카오톡 아이디 등)이 포함되었거나 요청하여 범죄에 악용될 가능성이 있는 경우<br>
+    2. 장난성 또는 질문에 맞지 않는 의미 없는 답변
+</div>
+</body>
+</html>

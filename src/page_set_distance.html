@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>[페이지] 지도 설정</title>
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/components.css">    
+</head>
+<body>
+    <div id="wrap" class="wrap">
+        <!-- header -->
+        <div class="header_map">
+        <div class="group_title">
+            <a href="#" class="icon_hamburger"></a>
+            <strong class="title_header"><span class="blind">여행코스</span></strong>
+        </div>
+        <a href="#" class="button_navigate" role="button">길안내 <i class="icon_navigate"></i>
+    </a></div>
+        <!-- //header -->
+        <div class="container">
+            <!-- 거리 설정 슬라이더 -->
+            <article class="aricle_slider">
+        <strong class="title_article">나의 체력그래프</strong>
+        <div id="range" class="range" data-value="">
+
+            <div id="groupSlider" class="input_box">
+                <input id="input_range" type="range" min="0" value="1200" max="10000" step="100">
+
+                <div id="rangeBar" class="bar"></div>
+                <div id="warnBar" class="warn_bar"></div>
+                <i class="icon_end_bullet"></i>
+                <div class="group_cursor">
+                    <div id="tooltip_cursor" class="tooltip">8109</div>
+                    <i class="icon_person_normal"></i>
+                </div>
+                
+                <div class="group_limit">
+                    <i id="iconTired" class="icon_person_tired"></i>
+                    <span id="tooltip_limit" class="tooltip">8109</span>
+                </div>
+            </div>
+        </div>
+    </article>
+            <!-- //거리 설정 슬라이더 -->
+            
+            <!-- 여행 코스 -->
+            <article class="article_course">
+        <strong class="title_course">여행코스</strong>
+        <div class="group_course">
+            <div class="list_course">
+                <a href="#" class="item">
+                    <i class="icon_circle">1</i>
+                    <em>에펠탑</em>
+                </a>
+                <!-- <a href="#" class="item">
+                    <i class="icon_circle">1</i>
+                    <em>에펠탑</em>
+                </a>
+                <a href="#" class="item">
+                    <i class="icon_circle">2</i>
+                    <em>평화의 벽</em>
+                </a>
+                <a href="#" class="item">
+                    <i class="icon_circle">3</i>
+                    <em>비르하켐다리</em>
+                </a>
+                <a href="#" class="item">
+                    <i class="icon_circle">3</i>
+                    <em>비르하켐다리</em>
+                </a>
+                <a href="#" class="item">
+                    <i class="icon_circle">3</i>
+                    <em>비르하켐다리</em>
+                </a>
+                <a href="#" class="item">
+                    <i class="icon_circle">3</i>
+                    <em>비르하켐다리</em>
+                </a> -->
+            </div>
+        </div>
+    </article>
+            <!-- //여행 코스 -->
+            <!-- 지도 -->
+            <article id="articleMap" class="article_map">
+        <span id="mapIndicator" class="round_range"></span>
+        <div id="groupSpot" class="group_spot"></div>
+    </article>
+            <!-- //지도 -->
+            <!-- 카드 리스트 -->
+            <article id="articleCardSpot" class="article_card_spot">
+        <!-- <strong class="title_card_spot">여행코스</strong> -->
+        <div class="group_card_spot">
+            <ul class="list_card">
+                <li class="item" data-value="4600">
+                    <span class="thumb" style="background-image:url(./img/spot/thumb_peacewall.jpeg)"></span>
+                    <div class="desc">
+                        <div class="part_title">
+                            <div class="list_rating">
+                                <span class="icon_star"></span>
+                                <span class="icon_star"></span>
+                                <span class="icon_star"></span>
+                            </div>
+                            <em class="spot_name">평화의 벽</em>
+                            <span class="spot_origin_name">Peace of wall</span>
+                        </div>
+                        <a href="#" class="button_add_course" role="button">
+                            <i class="icon_plus"></i>
+                            <span class="text">경로추가</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="item" data-value="5100">
+                    <span class="thumb" style="background-image:url(./img/spot/thumb_chaillot.jpeg)"></span>
+                    <div class="desc">
+                        <div class="part_title">
+                            <div class="list_rating">
+                                <span class="icon_star"></span>
+                                <span class="icon_star"></span>
+                                <span class="icon_star"></span>
+                            </div>
+                            <em class="spot_name">샤이요 궁</em>
+                            <span class="spot_origin_name">Palais de Chaillot</span>
+                        </div>
+                        <a href="#" class="button_add_course" role="button">
+                            <i class="icon_plus"></i>
+                            <span class="text">경로추가</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="item" data-value="5100">
+                    <span class="thumb" style="background-image:url(./img/spot/thumb_birhakeim.jpeg)"></span>
+                    <div class="desc">
+                        <div class="part_title">
+                            <div class="list_rating">
+                                <span class="icon_star"></span>
+                                <span class="icon_star"></span>
+                                <span class="icon_star"></span>
+                            </div>
+                            <em class="spot_name">비르하켐 다리</em>
+                            <span class="spot_origin_name">Pont de Bir-Hakeim</span>
+                        </div>
+                        <a href="#" class="button_add_course" role="button">
+                            <i class="icon_plus"></i>
+                            <span class="text">경로추가</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="item" data-value="5800">
+                    <span class="thumb" style="background-image:url(./img/spot/thumb_rodin.jpeg)"></span>
+                    <div class="desc">
+                        <div class="part_title">
+                            <div class="list_rating">
+                                <span class="icon_star"></span>
+                                <span class="icon_star"></span>
+                                <span class="icon_star"></span>
+                            </div>
+                            <em class="spot_name">로댕 박물관</em>
+                            <span class="spot_origin_name">Musée Rodin</span>
+                        </div>
+                        <a href="#" class="button_add_course" role="button">
+                            <i class="icon_plus"></i>
+                            <span class="text">경로추가</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="item" data-value="10000">
+                    <span class="thumb" style="background-image:url(./img/spot/thumb_triomphe.jpeg)"></span>
+                    <div class="desc">
+                        <div class="part_title">
+                            <div class="list_rating">
+                                <span class="icon_star"></span>
+                                <span class="icon_star"></span>
+                                <span class="icon_star"></span>
+                            </div>
+                            <em class="spot_name">개선문</em>
+                            <span class="spot_origin_name">Triumphal Arch</span>
+                        </div>
+                        <a href="#" class="button_add_course" role="button">
+                            <i class="icon_plus"></i>
+                            <span class="text">경로추가</span>
+                        </a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </article>
+            <!-- //카드 리스트 -->
+        </div>
+    </div>
+    <script src="./js/loadModel.js"></script>
+    <script>
+            var buttonNavi = document.getElementsByClassName('button_navigate')[0];
+            buttonNavi.addEventListener('click', function(e){
+                window.location.href = './page_finding_s1.html';
+            });
+
+            // 범위 : 0 ~ 10000
+            const defaultVal = 1200;
+            const limitVal = 8000;
+            const maxVal = 10000;
+            const mapMaxValue = 350;
+            var nowVal = defaultVal;
+
+            const maxMapValue = 350;
+            const defaultMapVal = 100;
+            var nowMapVal = defaultMapVal;
+            
+            var iscardListActive = false;
+
+            var courseCount = 1;
+    
+            var bodyEl = document.body;
+                iconTired = document.getElementById('icon_person_tired'),
+                tooltipLimit = document.getElementById('tooltip_limit'),
+                tooltipCursor = document.getElementById('tooltip_cursor'),
+                inputRange = document.getElementById('input_range'),
+                rangeBar = document.getElementById('rangeBar'),
+                range = document.getElementById('range'),
+                tooltipLimit = document.getElementById('tooltip_limit'),
+                iconTired = document.getElementById('iconTired'),
+                mapRoundRange = document.getElementById('mapIndicator'),
+                articleCardSpot = document.getElementById('articleCardSpot'),
+                warnBar = document.getElementById('warnBar'),
+                groupSlider = document.getElementById('groupSlider');
+            
+            function setRangeInput(_targetValue){
+                _targetValue = _targetValue || defaultVal;
+    
+                valPercent = Math.ceil(_targetValue / maxVal * 100);
+                nowMapVal = Math.ceil(valPercent / 100 * mapMaxValue);
+
+                console.log("valPercent : ", valPercent);
+
+                range.dataset.value = valPercent;
+                tooltipCursor.innerText = _targetValue;
+                tooltipCursor.style.left = valPercent+ '%';
+                rangeBar.style.width = valPercent + '%';
+                mapRoundRange.style.width = nowMapVal + 'px';
+                mapRoundRange.style.height = nowMapVal + 'px';
+
+                if(valPercent > 80){
+                    warnBar.style.width = valPercent - 80 + '%';;
+                    groupSlider.classList.add('is_active');
+                }
+                
+                if (valPercent <= 80) {
+                    warnBar.removeAttribute('style');
+                    groupSlider.classList.remove('is_active');
+                }
+
+                function mapSpotToggle(rangeVal){
+                    var spots = document.querySelectorAll('[data-value="' + rangeVal +'"]');
+                    if(_targetValue >= rangeVal){
+                        spots.forEach(function(spot){
+                            spot.classList.add('is_visible');
+                        });
+                    } else {
+                        spots.forEach(function(spot){
+                            spot.classList.remove('is_visible');
+                        });
+                    }
+                }
+                mapSpotToggle(2300);
+                mapSpotToggle(4600);
+                mapSpotToggle(5100);
+                mapSpotToggle(5800);
+                mapSpotToggle(6700);
+                mapSpotToggle(10000);
+            }
+    
+            function setLimitValue(_limitVal){
+                valPercent =  Math.floor(_limitVal / maxVal * 100) + "%";
+                tooltipLimit.style.left = valPercent;
+                iconTired.style.left = valPercent; 
+            }
+            
+            function handleRangeInput(e){
+                var _targetValue = e.target.value;
+                setRangeInput(_targetValue);
+            }
+
+            function handleMapSpot(e){
+                var _target = e.target;
+
+                if(_target.classList.contains('icon_map_spot')){
+                    if(iscardListActive){
+                        articleCardSpot.classList.remove('is_active');
+                        iscardListActive = false;
+                    } else {
+                        articleCardSpot.classList.add('is_active');
+                        iscardListActive = true;
+                    }
+                } else {
+                    if(iscardListActive){
+                        articleCardSpot.classList.remove('is_active');
+                        iscardListActive = false;
+                    }
+                }
+            }
+
+            function handleCourse(e){
+                var _target = e.target;
+                console.dir(_target);
+                
+                if(_target.classList.contains('button_add_course')){
+                    var titleText, itemElement;
+                    var parentEl = _target.parentElement.parentElement;
+                    const dataVal = parentEl.dataset.value;
+                    var listCourse = document.getElementsByClassName('list_course')[0];
+                    var totalString = listCourse.innerHTML;
+
+                    if(_target.classList.contains('is_active')){
+                        _target.classList.remove('is_active');
+                        courseCount--;
+
+                        var elList = document.getElementsByClassName('list_course')[0];
+                        var elItems = document.getElementsByClassName('list_course')[0].children;
+                        var itemLen = elItems.length;
+                        var prevItemIdx;
+
+                        for(var i=0; i<itemLen; i++){
+                            if(elItems[i].dataset.value === dataVal+''){
+                                prevItemIdx = i;
+                                elList.removeChild(elItems[i]);
+                                break;
+                            }
+                        }
+                        for(var k=0; k<elItems.length; k++){
+                            elItems[k].children[0].textContent = k+1;
+                        }
+                           
+                    } else {
+                        _target.classList.add('is_active');
+                        
+                        var defaultCourse = '<a href="#" class="item" data-value="' + 2300 + '"><i class="icon_circle">' + 1 + '</i><em>' + "에펠탑" + '</em></a>'
+                        titleText = _target.previousElementSibling.children[1].innerText;
+                        itemElement = '<a href="#" class="item" data-value="' + dataVal + '"><i class="icon_circle">' + (++courseCount) + '</i><em>' + titleText + '</em></a>';
+                        totalString += itemElement;
+                        listCourse.innerHTML = totalString;
+                    }
+                }
+            }
+    
+            setRangeInput();
+            setLimitValue(limitVal);
+
+            inputRange.addEventListener('input', handleRangeInput);
+            articleMap.addEventListener('click', handleMapSpot);
+            articleCardSpot.addEventListener('click', handleCourse);
+
+        </script>
+</body>
+</html>

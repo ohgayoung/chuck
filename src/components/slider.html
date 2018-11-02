@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+    <title>[컴포넌트] Slider</title>
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/components.css">  
+</head>
+<body>
+    <article class="aricle_slider" data-select="type_default">
+        <strong class="title_article">나의 체력그래프</strong>
+        <div id="range" class="range" data-value="">
+
+            <div id="groupSlider" class="input_box">
+                <input id="input_range" type="range" min="0" value="1200" max="10000" step="100" />
+
+                <div id="rangeBar" class="bar"></div>
+                <div id="warnBar" class="warn_bar"></div>
+                <i class="icon_end_bullet"></i>
+                <div class="group_cursor">
+                    <div id="tooltip_cursor" class="tooltip">8109</div>
+                    <i class="icon_person_normal"></i>
+                </div>
+                
+                <div class="group_limit">
+                    <i id="iconTired" class="icon_person_tired"></i>
+                    <span id="tooltip_limit" class="tooltip">8109</span>
+                </div>
+            </div>
+        </div>
+    </article>
+</body>
+</html>

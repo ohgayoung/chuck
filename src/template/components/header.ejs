@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+    <title>[컴포넌트] Header</title>
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/components.css">    
+</head>
+<body>
+    <div class="header_map" data-select="type_map">
+        <div class="group_title">
+            <a href="#" class="icon_hamburger"></a>
+            <strong class="title_header"><span class="blind">여행코스</span></strong>
+        </div>
+        <a href="#" class="button_navigate" role="button">길안내 <i class="icon_navigate"></i></button>
+    </div>
+
+    <!-- index.html : 나라선택 -->
+    <div class="header" data-select="type_default">
+        <div class="main_header">
+            <em class="title title_index"><span class="blind">나라선택</span></em>
+            <i class="icon_search"></i>
+        </div>
+    </div>
+
+    <!-- page_set_style.hml : 여행스타일 -->
+    <div class="header" data-select="type_set_style">
+        <div class="main_header">
+            <a href="#" class="button_prev_page"><i class="icon_prev_page"></i></a>
+            <em class="title title_style"><span class="blind">여행스타일</span></em>
+        </div>
+    </div>
+
+    <!-- page_set_attraction.hml : 여행지선택 -->
+    <div class="header" data-select="type_set_attraction">
+        <div class="main_header">
+            <a href="#" class="button_prev_page"><i class="icon_prev_page"></i></a>
+            <em class="title title_attraction"><span class="blind">여행지선택</span></em>
+        </div>
+    </div>
+
+    <!-- page_intro_effile.hml : 에펠탑 소개 -->
+    <div class="header" data-select="type_intro_effiel">
+        <div class="main_header">
+            <a href="#" class="button_prev_page"><i class="icon_prev_page"></i></a>
+            <em class="title title_effiel"><span class="blind">에펠탑소개</span></em>
+        </div>
+    </div>
+</body>
+</html>

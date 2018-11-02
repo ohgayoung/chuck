@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+.header_map {
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-bottom: 13px;
+    padding-left: 16px;
+
+    .group_title {
+        float: left;
+        margin-top: 3px;
+    }
+
+    &:after {
+        display: table;
+        table-layout: fixed;
+        clear: both;
+        content: '';
+    }
+
+    .icon_hamburger {
+        @include get-sprite('iocn_hamburger', $sp_common, (get-image: true));
+
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .title_header {
+        @include get-sprite('title_header_aside', $sp_common, (get-image: true));
+
+        display: inline-block;
+        margin: -2px 0 0 9px;
+    }
+
+    .button_navigate {
+        float: right;
+        width: 90px;
+        height: 28px;
+        background-color: #ed744a;
+        border-radius: 15px;
+        text-align: center;
+        color: #FBF8F2;
+        font-weight: 600;
+        line-height: 28px;
+        vertical-align: middle;
+
+        .icon_navigate {
+            @include get-sprite('icon_navigate', $sp_common, (get-image: true));
+
+            display: inline-block;
+            margin: -3px 0 0 2px;
+            vertical-align: middle;
+        }
+    }
+}
+
+.header {
+
+    .main_header {
+        position: relative;
+        height: 55px;
+        background-color: #F2EBDD;
+        text-align: center;
+        box-shadow: 0 1px 1px 0 rgba(139,130,130,0.50);
+
+        .title {
+            display: inline-block;
+            margin-top: 16px; 
+        }
+
+        .title_index {
+            @include get-sprite('title_index', $sp_common, (get-image: true));
+        }
+
+        .title_style {
+            @include get-sprite('title_header_style', $sp_common, (get-image: true)); 
+        }
+
+        .title_attraction {
+            @include get-sprite('title_header_attraction', $sp_common, (get-image: true)); 
+        }
+
+        .title_effiel {
+            @include get-sprite('title_header_effiel', $sp_common, (get-image: true)); 
+        }
+
+        .icon_search {
+            @include get-sprite('icon_search', $sp_common, (get-image: true));
+
+            position: absolute;
+            top: 15px;
+            right: 28px;
+        }
+
+        .button_prev_page {
+            position: absolute;
+            top: 13px;
+            left: 25px;
+            padding: 5px;
+        }
+        
+        .icon_prev_page {
+            @include get-sprite('icon_prev_page', $sp_common, (get-image: true));
+
+            display: block;
+            
+        }
+    }
+    
+}

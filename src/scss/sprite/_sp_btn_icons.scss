@@ -1,0 +1,99 @@
+// Sprites Map
+$sp_btn_icons: (
+	name: 'sp_btn_icons',
+	width: 123px,
+	height: 101px,
+	image: 'https://ssl.pstatic.net/static/kin/section/sprite/sp_btn_icons_180115.png',
+	sprites: (
+	'answer_questioner': (
+			offset-x: 0px,
+			offset-y: -43px,
+			width: 58px,
+			height: 18px,
+		),
+		'icon_add_qna': (
+			offset-x: -18px,
+			offset-y: -87px,
+			width: 14px,
+			height: 14px,
+		),
+		'icon_add_qna_on': (
+			offset-x: 0px,
+			offset-y: -87px,
+			width: 14px,
+			height: 14px,
+		),
+		'icon_addition_qna_answer': (
+			offset-x: 0px,
+			offset-y: 0px,
+			width: 39px,
+			height: 39px,
+		),
+		'icon_addition_qna_question': (
+			offset-x: -43px,
+			offset-y: 0px,
+			width: 39px,
+			height: 39px,
+		),
+		'icon_back_vs': (
+			offset-x: -110px,
+			offset-y: 0px,
+			width: 13px,
+			height: 15px,
+		),
+		'icon_opinion': (
+			offset-x: -62px,
+			offset-y: -43px,
+			width: 17px,
+			height: 16px,
+		),
+		'icon_opinion_on': (
+			offset-x: -86px,
+			offset-y: -45px,
+			width: 17px,
+			height: 16px,
+		),
+		'icon_scrap': (
+			offset-x: -86px,
+			offset-y: -24px,
+			width: 19px,
+			height: 17px,
+		),
+		'icon_upload_image_delete': (
+			offset-x: -86px,
+			offset-y: 0px,
+			width: 20px,
+			height: 20px,
+		),
+		'icon_upload_photo': (
+			offset-x: -86px,
+			offset-y: -65px,
+			width: 16px,
+			height: 13px,
+		),
+		'icon_upload_photo_on': (
+			offset-x: -66px,
+			offset-y: -65px,
+			width: 16px,
+			height: 13px,
+		),
+		'pri_ico': (
+			offset-x: -47px,
+			offset-y: -65px,
+			width: 15px,
+			height: 15px,
+		),
+		'spi_one_share_icon': (
+			offset-x: -25px,
+			offset-y: -65px,
+			width: 18px,
+			height: 15px,
+		),
+		'spi_one_share_icon_big': (
+			offset-x: 0px,
+			offset-y: -65px,
+			width: 21px,
+			height: 18px,
+		),
+	)
+);
