@@ -212,13 +212,13 @@
     }
 
     &.pos_1 {
-        bottom: 290px;
+        bottom: 250px;
         left: 138px;
         transition-delay: 2.8s;
     }
 
     &.pos_2 {
-        bottom: 355px;
+        bottom: 315px;
         left: 166px;
         transition-delay: 3.3s;
     }
@@ -231,7 +231,7 @@
     &.type_1 {
         @include get-sprite('layer_incline_1', $sp_common, (get-image: true));
 
-        bottom: 378px;
+        bottom: 338px;
         left: 92px;
 
         &.is_active {
@@ -242,7 +242,7 @@
     &.type_2 {
         @include get-sprite('layer_incline_2', $sp_common, (get-image: true));
 
-        bottom: 362px;
+        bottom: 322px;
         left: 219px;
         
         &.is_active {

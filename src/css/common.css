@@ -1,25 +1,146 @@
-@font-face{font-family:"kin_iconfont";src:url("https://ssl.pstatic.net/static/kin/iconfont/kin_iconfont_d6ed01.woff") format("woff")
+@charset "UTF-8";
+@font-face {
+	font-family: "kin_iconfont";
+	src: url("../font/kin_iconfont.woff") format("woff");
 }
-body,div,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0}
-body,input,textarea,select,button,table{font-family:'Helvetica Neue', 'Apple SD Gothic Neo', '나눔고딕', NanumGothic, '맑은 고딕', 'Malgun Gothic', '돋움', Dotum, sans-serif;font-size:12px;line-height:1.2}
-img,fieldset,button{border:0}
-ul,li{list-style:none}
-hr{display:none}
-em,address{font-style:normal}
-label{cursor:pointer}
-input{-webkit-appearance:none;-webkit-text-size-adjust:none}
-input[type=text]{border-radius:0}
-input[type=checkbox]{-webkit-appearance:checkbox}
-input[type=radio]{-webkit-appearance:radio}
-input::-ms-clear{display:none}
-button{outline:0;background-color:transparent;cursor:pointer}
-button[disabled]{cursor:default}
-button .text,button .icon{position:relative}
-a{color:#000;text-decoration:none}
-.blind,legend{overflow:hidden;position:absolute;width:1px;height:1px;margin:-1px;clip:rect(0 0 0 0)}
-i{font-style:normal}
-@font-face{font-family:NanumSquare;font-weight:400;src:url(https://ssl.pstatic.net/static/kin/fonts/NanumSquareR.eot);src:url(https://ssl.pstatic.net/static/kin/fonts/NanumSquareR.eot?#iefix) format("embedded-opentype"), url(https://ssl.pstatic.net/static/kin/fonts/NanumSquareR.woff2) format("woff2"), url(https://ssl.pstatic.net/static/kin/fonts/NanumSquareR.woff) format("woff"), url(https://ssl.pstatic.net/static/kin/fonts/NanumSquareR.ttf) format("truetype")
+
+/* common */
+body,
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+table,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+textarea,
+button,
+select {
+	margin: 0;
+	padding: 0;
 }
-@font-face{font-family:NanumSquare;font-weight:600;src:url(https://ssl.pstatic.net/static/kin/fonts/NanumSquareB.eot);src:url(https://ssl.pstatic.net/static/kin/fonts/NanumSquareB.eot?#iefix) format("embedded-opentype"), url(https://ssl.pstatic.net/static/kin/fonts/NanumSquareB.woff2) format("woff2"), url(https://ssl.pstatic.net/static/kin/fonts/NanumSquareB.woff) format("woff"), url(https://ssl.pstatic.net/static/kin/fonts/NanumSquareB.ttf) format("truetype")
+
+body,
+input,
+textarea,
+select,
+button,
+table {
+	font-family: 'Helvetica Neue', 'Apple SD Gothic Neo', '나눔고딕', NanumGothic, '맑은 고딕', 'Malgun Gothic', '돋움', Dotum, sans-serif;
+	font-size: 12px;
+	line-height: 1.2;
 }
-.f-square{font-family:NanumSquare, 'Apple SD Gothic Neo', sans-serif}
+
+img,
+fieldset,
+button {
+	border: 0;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+hr {
+	display: none;
+}
+
+em,
+address {
+	font-style: normal;
+}
+
+label {
+	cursor: pointer;
+}
+
+input {
+	-webkit-appearance: none;
+	-webkit-text-size-adjust: none;
+}
+
+input[type=text] {
+	border-radius: 0;
+}
+
+input[type=checkbox] {
+	-webkit-appearance: checkbox;
+}
+
+input[type=radio] {
+	-webkit-appearance: radio;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	outline: 0;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+button[disabled] {
+	cursor: default;
+}
+
+button .text,
+button .icon {
+	position: relative;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+.blind,
+legend {
+	overflow: hidden;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	clip: rect(0 0 0 0);
+}
+
+i {
+	font-style: normal;
+}
+
+/* webfont */
+@font-face {
+	font-family: NanumSquare;
+	font-weight: 400;
+	src: url(https://ssl.pstatic.net/static/kin/fonts/NanumSquareR.eot);
+	src: url(https://ssl.pstatic.net/static/kin/fonts/NanumSquareR.eot?#iefix) format("embedded-opentype"), url(https://ssl.pstatic.net/static/kin/fonts/NanumSquareR.woff2) format("woff2"), url(https://ssl.pstatic.net/static/kin/fonts/NanumSquareR.woff) format("woff"), url(https://ssl.pstatic.net/static/kin/fonts/NanumSquareR.ttf) format("truetype");
+}
+
+@font-face {
+	font-family: NanumSquare;
+	font-weight: 600;
+	src: url(https://ssl.pstatic.net/static/kin/fonts/NanumSquareB.eot);
+	src: url(https://ssl.pstatic.net/static/kin/fonts/NanumSquareB.eot?#iefix) format("embedded-opentype"), url(https://ssl.pstatic.net/static/kin/fonts/NanumSquareB.woff2) format("woff2"), url(https://ssl.pstatic.net/static/kin/fonts/NanumSquareB.woff) format("woff"), url(https://ssl.pstatic.net/static/kin/fonts/NanumSquareB.ttf) format("truetype");
+}
+
+.f-square {
+	font-family: NanumSquare, 'Apple SD Gothic Neo', sans-serif;
+}
+
+/*# sourceMappingURL=common.css.map */

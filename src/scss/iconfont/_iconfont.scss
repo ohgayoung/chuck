@@ -1,5 +1,5 @@
 $iconfont-family: "kin_iconfont";
-$iconfont-src: url('https://ssl.pstatic.net/static/kin/iconfont/kin_iconfont_d6ed01.woff') format('woff');
+$iconfont-src: url('../font/kin_iconfont.woff') format('woff');
 
 @mixin kin_iconfont-styles {
     font-family: "kin_iconfont";
